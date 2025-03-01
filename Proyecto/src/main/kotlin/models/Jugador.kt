@@ -10,15 +10,14 @@ class Jugador(
     fecha_incorporacion: String, //Localizar
     salario: Double,
     pais: String,
-    rol: String,
     createdAt: LocalDateTime,
     updatedAt: LocalDateTime,
     isDeleted: Boolean,
-    val posicion: String, // Arreglar
+    val posicion: Posicion,
     val dorsal: Int,
     val altura: Double,
     val peso: Double,
     val goles: Int,
     val partidos_jugados: Int
-): Integrante(id = id, nombre = nombre, apellidos = apellidos, fecha_nacimiento = fecha_nacimiento, fecha_incorporacion = fecha_incorporacion, salario = salario, pais = pais, rol = rol,createdAt = createdAt,updatedAt = updatedAt, isDeleted = isDeleted) {
+): Integrante(id = id, nombre = nombre, apellidos = apellidos, fecha_nacimiento = fecha_nacimiento, fecha_incorporacion = fecha_incorporacion, salario = salario, pais = pais, createdAt = createdAt,updatedAt = updatedAt, isDeleted = isDeleted) {
 }

@@ -10,10 +10,9 @@ class Entrenador(
     fecha_incorporacion: String, //Localizar
     salario: Double,
     pais: String,
-    rol: String,
     createdAt: LocalDateTime,
     updatedAt: LocalDateTime,
     isDeleted: Boolean,
-    val especialidad: String, // Arreglar
-): Integrante(id = id, nombre = nombre, apellidos = apellidos, fecha_nacimiento = fecha_nacimiento, fecha_incorporacion = fecha_incorporacion, salario = salario, pais = pais, rol = rol,createdAt = createdAt, updatedAt = updatedAt, isDeleted = isDeleted) {
+    val especialidad: Especialidad
+): Integrante(id = id, nombre = nombre, apellidos = apellidos, fecha_nacimiento = fecha_nacimiento, fecha_incorporacion = fecha_incorporacion, salario = salario, pais = pais, createdAt = createdAt, updatedAt = updatedAt, isDeleted = isDeleted) {
 }

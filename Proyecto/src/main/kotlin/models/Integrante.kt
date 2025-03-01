@@ -10,7 +10,6 @@ abstract class Integrante (
     val fecha_incorporacion: String, //Localizar
     val salario: Double,
     val pais: String,
-    val rol: String, // Arreglar
     var createdAt: LocalDateTime,
     var updatedAt: LocalDateTime,
     var isDeleted: Boolean = false,
