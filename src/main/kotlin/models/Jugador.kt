@@ -1,14 +1,15 @@
 package org.example.models
 
 import org.example.models.interfaces.Posicion
+import java.time.LocalDate
 import java.time.LocalDateTime
 
 class Jugador(
     id: Long,
     nombre: String,
     apellidos: String,
-    fecha_nacimiento: String, // Localizar
-    fecha_incorporacion: String, //Localizar
+    fecha_nacimiento: LocalDate,
+    fecha_incorporacion: LocalDate,
     salario: Double,
     pais: String,
     createdAt: LocalDateTime,

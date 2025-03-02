@@ -4,6 +4,7 @@ import org.example.extensions.copy
 import org.example.models.Entrenador
 import org.example.models.Integrante
 import org.example.models.Jugador
+import org.example.validator.IntegranteValidator
 import org.lighthousegames.logging.logging
 import java.time.LocalDateTime
 
@@ -11,6 +12,7 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
     private val logger = logging()
     private val equipo = mutableMapOf<Long, Integrante>()
     private var nextId = 1L
+    private var validator = IntegranteValidator()
 
     private fun generateId(): Long {
         return nextId++
@@ -19,6 +21,8 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
         logger.debug { "Guardando integrante del equipo..." }
         val timeStamp = LocalDateTime.now()
         val id = generateId()
+
+        validator.validar(entity)
 
         if (entity is Jugador) {
             equipo[id] = entity.copy(id, timeStamp)
@@ -30,7 +34,7 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
     }
 
     override fun delete(id: Long): Integrante? {
-        logger.debug { "Borrando integrante del equipo ocn ID: $id" }
+        logger.debug { "Borrando integrante del equipo con ID: $id" }
         return equipo.remove(id)
     }
 
