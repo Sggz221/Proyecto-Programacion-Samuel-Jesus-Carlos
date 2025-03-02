@@ -1,6 +1,5 @@
 package org.example.dto
 
-import org.example.models.interfaces.Especialidad
 import java.time.LocalDate
 import java.time.LocalDateTime
 
@@ -12,8 +11,8 @@ class EntrenadorDTO(
     val fecha_incorporacion: String,
     val salario: Double,
     val pais: String,
-    val createdAt: String,
-    val updatedAt: String,
+    val createdAt: String = LocalDate.now().toString(),
+    val updatedAt: String = LocalDate.now().toString(),
     val isDeleted: Boolean = false,
     val especialidad: String
 ) {
