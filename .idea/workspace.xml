@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca860b65-21dc-4eae-a191-cfe582155d83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dto/EntrenadorDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dto/EntrenadorDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dto/JugadorDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dto/JugadorDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mapper/JugadorMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mapper/JugadorMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/CentrocampistaImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/DefensaImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/DelanteroImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Entrenador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Entrenador.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/EntrenadorAsistenteImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/EntrenadorPorteros.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/EntrenadorPrincipalImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Jugador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Jugador.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/PorteroImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/Centrocampista.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/Defensa.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/Delantero.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/EntrenadorAsistente.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/EntrenadorPorteros.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/EntrenadorPrincipal.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/Especialidad.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/Portero.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/interfaces/Posicion.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageCSV.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageCSV.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,5 +105,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

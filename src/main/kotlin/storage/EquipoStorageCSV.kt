@@ -3,8 +3,11 @@ package org.example.storage
 import org.example.dto.EntrenadorDTO
 import org.example.dto.JugadorDTO
 import org.example.exceptions.Exceptions
+import org.example.mapper.toDto
 import org.example.mapper.toModel
+import org.example.models.Entrenador
 import org.example.models.Integrante
+import org.example.models.Jugador
 import org.lighthousegames.logging.logging
 import java.io.File
 import java.io.FileNotFoundException
@@ -55,9 +58,26 @@ class EquipoStorageCSV: EquipoStorage {
             }
     }
 
-    override fun fileWrite(integrantes: List<Integrante>, file: File, format: String) {
-        TODO("Not yet implemented")
-    }
+    override fun fileWrite(equipo: List<Integrante>, file: File, format: String) {
+        logger.debug { "Escribiendo integrantes del equipo en fichero CSV" }
+
+        if (!file.parentFile.exists() || !file.parentFile.isDirectory) {
+            throw Exceptions.StorageException("El directorio padre del fichero no existe")
+        }
+
+        file.writeText("id,nombre,apellidos,fecha_nacimiento,fecha_incorporacion,salario,pais,rol,especialidad,posicion,dorsal,altura,peso,goles,partidos_jugados\n")
+
+        equipo.map {
+            if (it is Jugador) {
+                it.toDto()
+                file.appendText("${it.id},${it.nombre},${it.apellidos},${it.fecha_nacimiento},${it.fecha_incorporacion},${it.salario},${it.pais},Jugador,,${it.posicion},${it.dorsal},${it.altura},${it.peso},${it.goles},${it.partidos_jugados}\n")
+            }
+            if (it is Entrenador) {
+                it.toDto()
+                file.appendText("${it.id},${it.nombre},${it.apellidos},${it.fecha_nacimiento},${it.fecha_incorporacion},${it.salario},${it.pais},Entrenador,${it.especialidad},,,,,,\n")
+            }
+        }
 
 
-}
+
+}}
