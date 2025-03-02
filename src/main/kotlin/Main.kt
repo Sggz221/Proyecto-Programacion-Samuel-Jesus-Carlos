@@ -21,10 +21,10 @@ fun main() {
 
     val storage = EquipoStorageCSV()
     val file = File("data", "personal.csv")
-    val equipo: List<Integrante> = storage.fileRead(
-        file,
-        format = "aaaa"
-    )
+    val equipo: List<Integrante> = storage.fileRead(file, format = "aaaa")
     equipo.forEach {println(it)}
+
+    val file2 = File("data", "personalOutput.csv")
+    storage.fileWrite(equipo, file2, "aaaa")
 
 }

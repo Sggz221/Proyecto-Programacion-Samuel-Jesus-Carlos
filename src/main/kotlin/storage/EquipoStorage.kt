@@ -5,5 +5,5 @@ import java.io.File
 
 interface EquipoStorage {
     fun fileRead(file: File, format: String): List<Integrante>
-    fun fileWrite(integrantes: List<Integrante>, file: File, format: String)
+    fun fileWrite(equipo: List<Integrante>, file: File, format: String)
 }
