@@ -1,6 +1,9 @@
 package org.example.repositories
 
+import org.example.extensions.copy
+import org.example.models.Entrenador
 import org.example.models.Integrante
+import org.example.models.Jugador
 import org.lighthousegames.logging.logging
 import java.time.LocalDateTime
 
@@ -12,11 +15,18 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
     private fun generateId(): Long {
         return nextId++
     }
-    override fun save(id: Long, entity: Integrante): Integrante {
-        logger.debug { "Guardando integrante del equipo con ID: $id" }
+    override fun save(entity: Integrante): Integrante {
+        logger.debug { "Guardando integrante del equipo..." }
         val timeStamp = LocalDateTime.now()
         val id = generateId()
 
+        if (entity is Jugador) {
+            equipo[id] = entity.copy(id, timeStamp)
+        }
+        else if (entity is Entrenador) {
+            equipo[id] = entity.copy(id, timeStamp)
+        }
+        return equipo[id]!!
     }
 
     override fun delete(id: Long): Integrante? {

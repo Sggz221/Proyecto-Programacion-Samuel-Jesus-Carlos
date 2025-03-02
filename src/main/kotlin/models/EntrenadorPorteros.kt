@@ -1,4 +1,6 @@
 package org.example.models
 
-interface EntrenadorPorteros: Especialidad {
+import org.example.models.interfaces.EntrenadorPorteros
+
+class EntrenadorPorteros: EntrenadorPorteros {
 }

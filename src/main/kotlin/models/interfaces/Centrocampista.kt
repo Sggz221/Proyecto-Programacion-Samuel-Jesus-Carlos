@@ -1,4 +1,4 @@
-package org.example.models
+package org.example.models.interfaces
 
 interface Centrocampista: Posicion {
 }

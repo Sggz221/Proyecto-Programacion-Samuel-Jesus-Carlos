@@ -1,5 +1,6 @@
 package org.example.models
 
+import org.example.models.interfaces.Especialidad
 import java.time.LocalDateTime
 
 class Entrenador(
