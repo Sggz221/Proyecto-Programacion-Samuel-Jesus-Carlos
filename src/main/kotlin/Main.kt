@@ -33,16 +33,21 @@ fun main() {
     val file2 = File("data", "personalOutput.csv")
     storage.fileWrite(equipo, file2, "aaaa")
     */
-    val fileCSV = File("data", "personal.csv")
-    val equipoCSV: List<Integrante> = storage.fileRead(fileCSV, format = "aaaa")
+    //val fileCSV = File("data", "personal.csv")
+    //val equipoCSV: List<Integrante> = storage.fileRead(fileCSV, format = "aaaa")
 
     //equipoCSV.forEach {println(it)}
-    val outputJSON = File("data", "personalOutput.json")
-    storage2.fileWrite(equipoCSV, outputJSON, "aaaa")
+    //val outputJSON = File("data", "personalOutput.json")
+    //storage2.fileWrite(equipoCSV, outputJSON, "aaaa")
 
     val fileXML = File("data", "personal.xml")
     val equipoXML = storage3.fileRead(fileXML, format = "aaaa")
     equipoXML.forEach { println(it) }
+
+    val outputXML = File("data", "personalOutput.xml")
+    storage3.fileWrite(equipoXML, outputXML, "aaaa")
+
+
 
 
 
