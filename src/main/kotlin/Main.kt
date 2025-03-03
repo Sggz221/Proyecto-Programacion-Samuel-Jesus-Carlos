@@ -6,6 +6,7 @@ import org.example.models.Jugador
 import org.example.repositories.EquipoRepositoryImpl
 import org.example.storage.EquipoStorage
 import org.example.storage.EquipoStorageCSV
+import org.example.storage.EquipoStorageJSON
 import java.io.File
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -20,11 +21,19 @@ fun main() {
     repositorio.save(e1)
 
     val storage = EquipoStorageCSV()
-    val file = File("data", "personal.csv")
+    val storage2 = EquipoStorageJSON()
+    /*
+
     val equipo: List<Integrante> = storage.fileRead(file, format = "aaaa")
-    equipo.forEach {println(it)}
+    //equipo.forEach {println(it)}
 
     val file2 = File("data", "personalOutput.csv")
     storage.fileWrite(equipo, file2, "aaaa")
+    */
+    val fileCSV = File("data", "personal.csv")
+    val equipoCSV: List<Integrante> = storage.fileRead(fileCSV, format = "aaaa")
 
+    equipoCSV.forEach {println(it)}
+    val outputJSON = File("data", "personalOutput.json")
+    storage2.fileWrite(equipoCSV, outputJSON, "aaaa")
 }

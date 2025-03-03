@@ -1,10 +1,11 @@
 package org.example.dto
+
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import java.time.LocalDateTime
 
 @Serializable
-data class JugadorDTO (
+data class IntegranteDTO(
     @SerialName("id")
     val id: Long,
     @SerialName("nombre")
@@ -19,20 +20,20 @@ data class JugadorDTO (
     val salario: Double,
     @SerialName("pais")
     val pais: String,
-    val createdAt: String = LocalDateTime.now().toString(),
-    val updatedAt: String = LocalDateTime.now().toString(),
-    val isDeleted: Boolean = false,
+    @SerialName("rol")
+    val rol: String,
+    @SerialName("especialidad")
+    val especialidad: String?,
     @SerialName("posicion")
-    val posicion: String,
+    val posicion: String?,
     @SerialName("dorsal")
-    val dorsal: Int,
+    val dorsal: Int?,
     @SerialName("altura")
-    val altura: Double,
+    val altura: Double?,
     @SerialName("peso")
-    val peso: Double,
+    val peso: Double?,
     @SerialName("goles")
-    val goles: Int,
+    val goles: Int?,
     @SerialName("partidos_jugados")
-    val partidos_jugados: Int
-) {
-}
+    val partidos_jugados: Int?
+)
