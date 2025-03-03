@@ -73,6 +73,46 @@ fun IntegranteXmlDTO.toModel(): Integrante{
     }
 }
 
+fun Entrenador.toXmlDTO (): IntegranteXmlDTO {
+    return IntegranteXmlDTO(
+        id = id,
+        nombre = nombre,
+        apellidos = apellidos,
+        fecha_nacimiento = fecha_nacimiento.toString(),
+        fecha_incorporacion = fecha_incorporacion.toString(),
+        salario = salario,
+        pais = pais,
+        especialidad = especialidad.toString(),
+        rol = "Entrenador",
+        posicion = "",
+        dorsal = "",
+        altura = "",
+        peso = "",
+        goles = "",
+        partidos_jugados = ""
+    )
+}
+
+fun Jugador.toXmlDTO (): IntegranteXmlDTO {
+    return IntegranteXmlDTO(
+        id = id,
+        nombre = nombre,
+        apellidos = apellidos,
+        fecha_nacimiento = fecha_nacimiento.toString(),
+        fecha_incorporacion = fecha_incorporacion.toString(),
+        salario = salario,
+        pais = pais,
+        especialidad = "",
+        rol = "Jugador",
+        posicion = posicion.toString(),
+        dorsal = dorsal.toString(),
+        altura = altura.toString(),
+        peso = peso.toString(),
+        goles = goles.toString(),
+        partidos_jugados = partidos_jugados.toString()
+    )
+}
+
 fun Entrenador.toDto (): IntegranteDTO {
     return IntegranteDTO(
         id = id,
