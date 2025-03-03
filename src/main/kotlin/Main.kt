@@ -7,6 +7,8 @@ import org.example.repositories.EquipoRepositoryImpl
 import org.example.storage.EquipoStorage
 import org.example.storage.EquipoStorageCSV
 import org.example.storage.EquipoStorageJSON
+import org.example.storage.EquipoStorageXML
+
 import java.io.File
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -22,6 +24,7 @@ fun main() {
 
     val storage = EquipoStorageCSV()
     val storage2 = EquipoStorageJSON()
+    val storage3 = EquipoStorageXML()
     /*
 
     val equipo: List<Integrante> = storage.fileRead(file, format = "aaaa")
@@ -33,7 +36,14 @@ fun main() {
     val fileCSV = File("data", "personal.csv")
     val equipoCSV: List<Integrante> = storage.fileRead(fileCSV, format = "aaaa")
 
-    equipoCSV.forEach {println(it)}
+    //equipoCSV.forEach {println(it)}
     val outputJSON = File("data", "personalOutput.json")
     storage2.fileWrite(equipoCSV, outputJSON, "aaaa")
+
+    val fileXML = File("data", "personal.xml")
+    val equipoXML = storage3.fileRead(fileXML, format = "aaaa")
+    equipoXML.forEach { println(it) }
+
+
+
 }

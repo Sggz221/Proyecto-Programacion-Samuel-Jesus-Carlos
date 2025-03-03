@@ -49,6 +49,5 @@ class EquipoStorageJSON: EquipoStorage {
         val jsonString: String = json.encodeToString(listaIntegrantesDTO)  // Serializar a JSON
         file.writeText(jsonString)  // Guardar en el archivo
 
-        // file.writeText(json.encodeToString<List<IntegranteDTO>>(equipo.map { it.toDto() }))
     }
 }

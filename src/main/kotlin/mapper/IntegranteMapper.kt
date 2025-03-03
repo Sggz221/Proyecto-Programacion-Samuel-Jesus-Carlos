@@ -3,6 +3,7 @@ package org.example.mapper
 import org.example.Especialidad
 import org.example.Posicion
 import org.example.dto.IntegranteDTO
+import org.example.dto.IntegranteXmlDTO
 import org.example.models.Entrenador
 import org.example.models.Integrante
 import org.example.models.Jugador
@@ -24,6 +25,38 @@ fun IntegranteDTO.toModel(): Integrante {
             peso = peso!!,
             goles = goles!!,
             partidos_jugados = partidos_jugados!!
+        )
+    }
+    else{
+        Entrenador(
+            id = id,
+            nombre = nombre,
+            apellidos = apellidos,
+            fecha_nacimiento = LocalDate.parse(fecha_nacimiento),
+            fecha_incorporacion = LocalDate.parse(fecha_incorporacion),
+            salario = salario,
+            pais = pais,
+            especialidad = Especialidad.valueOf(especialidad!!)
+        )
+    }
+}
+
+fun IntegranteXmlDTO.toModel(): Integrante{
+    return if(this.rol == "Jugador"){
+        Jugador(
+            id = id,
+            nombre = nombre,
+            apellidos = apellidos,
+            fecha_nacimiento = LocalDate.parse(fecha_nacimiento),
+            fecha_incorporacion = LocalDate.parse(fecha_incorporacion),
+            salario = salario,
+            pais = pais,
+            posicion = Posicion.valueOf(posicion!!),
+            dorsal = dorsal!!.toInt(),
+            altura = altura!!.toDouble(),
+            peso = peso!!.toDouble(),
+            goles = goles!!.toInt(),
+            partidos_jugados = partidos_jugados!!.toInt()
         )
     }
     else{
