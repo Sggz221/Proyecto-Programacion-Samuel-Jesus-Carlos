@@ -52,4 +52,4 @@ data class IntegranteDTO(
     @SerialName("partidos_jugados")
     @XmlElement
     val partidos_jugados: Int?
-)
+): java.io.Serializable

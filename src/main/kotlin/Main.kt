@@ -4,10 +4,7 @@ import org.example.models.Entrenador
 import org.example.models.Integrante
 import org.example.models.Jugador
 import org.example.repositories.EquipoRepositoryImpl
-import org.example.storage.EquipoStorage
-import org.example.storage.EquipoStorageCSV
-import org.example.storage.EquipoStorageJSON
-import org.example.storage.EquipoStorageXML
+import org.example.storage.*
 
 import java.io.File
 import java.time.LocalDate
@@ -25,6 +22,8 @@ fun main() {
     val storage = EquipoStorageCSV()
     val storage2 = EquipoStorageJSON()
     val storage3 = EquipoStorageXML()
+    val storage4 = EquipoStorageBIN()
+
     /*
 
     val equipo: List<Integrante> = storage.fileRead(file, format = "aaaa")
@@ -40,15 +39,14 @@ fun main() {
     //val outputJSON = File("data", "personalOutput.json")
     //storage2.fileWrite(equipoCSV, outputJSON, "aaaa")
 
-    val fileXML = File("data", "personal.xml")
-    val equipoXML = storage3.fileRead(fileXML, format = "aaaa")
-    equipoXML.forEach { println(it) }
+    //val fileXML = File("data", "personal.xml")
+    //val equipoXML = storage3.fileRead(fileXML, format = "aaaa")
+    //equipoXML.forEach { println(it) }
 
-    val outputXML = File("data", "personalOutput.xml")
-    storage3.fileWrite(equipoXML, outputXML, "aaaa")
+    //val outputXML = File("data", "personalOutput.xml")
+    //storage3.fileWrite(equipoXML, outputXML, "aaaa")
 
-
-
-
-
+    val file = File("data", "personalOutput.bin")
+    val equipo: List<Integrante> = storage4.fileRead(file, format = "aaaa")
+    equipo.forEach { println(it)}
 }

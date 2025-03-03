@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ca860b65-21dc-4eae-a191-cfe582155d83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/personalOutput.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/personalOutput.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mapper/IntegranteMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mapper/IntegranteMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageXML.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageXML.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dto/IntegranteDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dto/IntegranteDTO.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +76,9 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/kotlin/Especialidad.kt" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/kotlin/Posicion.kt" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/kotlin/dto/IntegranteDTO.kt" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageJSON.kt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageBIN.kt" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
