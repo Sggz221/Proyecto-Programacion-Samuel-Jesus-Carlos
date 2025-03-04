@@ -1,6 +1,5 @@
 package org.example.models
 
-import org.example.Posicion
 import java.time.LocalDate
 import java.time.LocalDateTime
 

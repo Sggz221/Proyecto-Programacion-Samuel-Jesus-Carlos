@@ -15,11 +15,15 @@ import java.time.LocalDateTime
 class EquipoStorageCSV: EquipoStorage {
     private var logger = logging()
 
-    override fun fileRead(file: File, format: String): List<Integrante> {
+    override fun fileRead(file: File): List<Integrante> {
         logger.debug { "Leyendo fichero CSV" }
-        if (!file.canRead()) {
-            throw Exceptions.StorageException("No se tienen permisos de lectura")
-        }
+
+        if (!file.exists()) throw Exceptions.StorageException("El fichero no existe")
+
+        if (!file.isFile) throw Exceptions.StorageException("La ruta especificada no es un fichero")
+
+        if (!file.canRead()) throw Exceptions.StorageException("No se tienen permisos de lectura")
+
 
         return file.readLines()
             .drop(1)
@@ -45,7 +49,7 @@ class EquipoStorageCSV: EquipoStorage {
             }
     }
 
-    override fun fileWrite(equipo: List<Integrante>, file: File, format: String) {
+    override fun fileWrite(equipo: List<Integrante>, file: File) {
         logger.debug { "Escribiendo integrantes del equipo en fichero CSV" }
 
         if (!file.parentFile.exists() || !file.parentFile.isDirectory) {
