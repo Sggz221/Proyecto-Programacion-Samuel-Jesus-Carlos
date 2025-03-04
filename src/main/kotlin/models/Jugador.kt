@@ -4,7 +4,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 
 class Jugador(
-    id: Long,
+    id: Long = 0L,
     nombre: String,
     apellidos: String,
     fecha_nacimiento: LocalDate,
