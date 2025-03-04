@@ -1,7 +1,5 @@
 package org.example.models
 
-import kotlinx.serialization.Serializable
-import org.example.Especialidad
 import java.time.LocalDate
 import java.time.LocalDateTime
 

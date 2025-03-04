@@ -1,7 +1,7 @@
 package org.example.mapper
 
-import org.example.Especialidad
-import org.example.Posicion
+import org.example.models.Especialidad
+import org.example.models.Posicion
 import org.example.dto.IntegranteDTO
 import org.example.dto.IntegranteXmlDTO
 import org.example.models.Entrenador

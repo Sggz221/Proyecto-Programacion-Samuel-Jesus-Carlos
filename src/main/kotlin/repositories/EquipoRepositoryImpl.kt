@@ -51,16 +51,17 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
 
     override fun getAll(): List<Integrante> {
         logger.debug { "Obteniendo todos los integrantes" }
+
         return equipo.values.toList()
     }
 
     override fun getById(id: Long): Integrante? {
-        logger.debug { "Obteniendo itegrante del equipo con ID: $id" }
+        logger.debug { "Obteniendo integrante del equipo con ID: $id" }
         return equipo[id]
     }
 
     override fun deleteLogical(id: Long, entity: Integrante): Integrante? {
-        logger.debug{"Actualizando integrante del equipo con ID: $id"}
+        logger.debug{"Borrando lógicamente integrante del equipo con ID: $id"}
         equipo[id] ?: return null
         val timeStamp = LocalDateTime.now()
 
