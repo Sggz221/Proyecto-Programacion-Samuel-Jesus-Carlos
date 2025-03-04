@@ -2,7 +2,9 @@ package org.example.models
 
 import nl.adaptivity.xmlutil.dom2.ProcessingInstruction
 import org.example.service.ServiceImpl
+import java.io.File
 import java.time.LocalDate
+
 
 class Consultas(private val service:ServiceImpl = ServiceImpl()) {
 
@@ -10,7 +12,7 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         val service = ServiceImpl()
 
 
-        service.importFromFile("C:\\Users\\jesus\\Desktop\\Proyecto-Programacion-Samuel-Jesus-Carlos\\data\\personal.csv")
+        service.importFromFile(File("data", "personal.csv").path)
         service.getAll().forEach {println(it)}
         println("--------------------------------------")
 
@@ -59,7 +61,7 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         println("--------------------------------------")
 
         println("10. Número total de partidos jugados por todos los jugadores.")
-       service.getAll().filterIsInstance<Jugador>().groupBy { it.nombre }.mapValues { (_,jugadores) -> jugadores.map { it.partidos_jugados } }.forEach { println(it) }
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.nombre }.mapValues { (_,jugadores) -> jugadores.map { it.partidos_jugados } }.forEach { println(it) }
 
         println("--------------------------------------")
 
@@ -111,18 +113,56 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         val golesDelantero = service.getAll().filterIsInstance<Jugador>().filter { it.posicion == Posicion.DELANTERO}.map { it.goles}.average()
         service.getAll().filterIsInstance<Jugador>().filter { it.posicion == Posicion.DELANTERO && it.goles > golesDelantero}.forEach { it }
 
+        println("--------------------------------------")
 
-       //21. Por posición, máximo de goles, mínimo de goles y media.
-       //22. Estimación del coste total de la plantilla.
-       //23. Total del salario pagado, agrupados por año de incorporación.
-       //24. Jugadores agrupados por país y, dentro de cada grupo, el jugador con más partidos jugados.
-       //25. Promedio de goles por posición, y dentro de cada posición, el jugador con el mayor número de
-       //goles.
-       //26. Entrenadores agrupados por especialidad, y dentro de cada especialidad, el entrenador con el
-       //salario más alto.
-       //27. Jugadores agrupados por década de nacimiento, y dentro de cada grupo, el promedio de partidos
-       //jugados.
-       //28. Salario promedio de los jugadores agrupados por su país de origen, y dentro de cada grupo, el
-       //jugador con el salario más bajo y alto.
+        println("21. Por posición, máximo de goles, mínimo de goles y media.")
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.posicion }.mapValues { (_,jugadores) ->
+            val goles = jugadores.map { it.goles }
+            Triple(goles.maxOrNull(), goles.minOrNull(), goles.average())}.forEach { println(it) }
+
+        println("--------------------------------------")
+
+        println("22. Estimación del coste total de la plantilla.")
+        val sumSalarios = service.getAll().sumOf { it.salario }
+        println("Coste total de toda la plantilla: $sumSalarios")
+
+        println("--------------------------------------")
+
+        println("23. Total del salario pagado, agrupados por año de incorporación.")
+        println(service.getAll().groupBy { it.fecha_incorporacion }.mapValues { (_,jugadores) -> jugadores.sumOf { it.salario } } )
+
+        println("--------------------------------------")
+
+        println("24. Jugadores agrupados por país y, dentro de cada grupo, el jugador con más partidos jugados.")
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.pais }.mapValues { (_,jugadores) -> jugadores.maxBy { it.partidos_jugados } }.forEach { println(it) }
+
+        println("--------------------------------------")
+
+       println("25. Promedio de goles por posición, y dentro de cada posición, el jugador con el mayor número de goles")
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.posicion }.mapValues { (_,jugadores) ->
+            val maxGoles = jugadores.maxBy { it.goles }
+            val goles = jugadores.map { it.goles }
+            Pair(goles.maxOrNull(), maxGoles)
+        }.forEach{ println(it)}
+
+        println("--------------------------------------")
+
+        println("26. Entrenadores agrupados por especialidad, y dentro de cada especialidad, el entrenador con el salario más alto.")
+        service.getAll().filterIsInstance<Entrenador>().groupBy { it.especialidad }.mapValues { (_,entrenadores) -> entrenadores.maxBy { it.salario } }.forEach { println(it) }
+
+        println("--------------------------------------")
+
+
+        println("27. Jugadores agrupados por década de nacimiento, y dentro de cada grupo, el promedio de partidos jugados.")
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.fecha_nacimiento }.mapValues { (_,jugadores) -> jugadores.map { it.partidos_jugados }.average() }.forEach { println(it) }
+
+
+        println("--------------------------------------")
+
+        println("28. Salario promedio de los jugadores agrupados por su país de origen, y dentro de cada grupo, el jugador con el salario más bajo y alto.")
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.pais }.mapValues { (_,jugadores) ->
+            val salario = jugadores.map { it.salario }
+            Pair(salario.maxOrNull(), salario.minOrNull())
+        }.forEach{ println(it)}
     }
 }

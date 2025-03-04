@@ -12,5 +12,8 @@ import java.time.LocalDateTime
 
 fun main() {
     val menu = Menu()
-    menu.menu()
+    // menu.menu()
+
+    val consultas = Consultas()
+    consultas.consultas()
 }
