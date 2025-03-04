@@ -25,10 +25,10 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
         validator.validar(entity)
 
         if (entity is Jugador) {
-            equipo[id] = entity.copy(id, timeStamp)
+            equipo[id] = entity.copy(newId = id, timeStamp = timeStamp)
         }
         else if (entity is Entrenador) {
-            equipo[id] = entity.copy(id, timeStamp)
+            equipo[id] = entity.copy(newId = id, timeStamp = timeStamp)
         }
         return equipo[id]!!
     }
@@ -51,7 +51,6 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
 
     override fun getAll(): List<Integrante> {
         logger.debug { "Obteniendo todos los integrantes" }
-
         return equipo.values.toList()
     }
 

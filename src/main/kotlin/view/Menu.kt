@@ -1,5 +1,6 @@
 package org.example.view
 
+import org.example.extensions.copy
 import org.example.models.Entrenador
 import org.example.models.Especialidad
 import org.example.models.Jugador
@@ -47,7 +48,7 @@ class Menu (
             4 -> borrarMiembro()
             5 -> service.getAll().forEach {println(it)}
             6 -> exportarDatos()
-            7 -> {}
+            7 -> {} // Consultas
             8 -> {}
         }
     }
@@ -94,9 +95,87 @@ class Menu (
 
 
     fun actualizarMiembro() {
-        TODO()
+        val id  = preguntarID()
+        try {
+            val integrante = service.getById(id)
+            if (integrante is Jugador){
+                val campo = preguntarCampos(true)
+                when(campo){
+                    "nombre" -> service.update(id, integrante.copy(newNombre = preguntarString("nombre")))
+                    "apellidos" -> service.update(id, integrante.copy(newApellidos = preguntarString("apellidos")))
+                    "fecha_nacimiento" -> service.update(id, integrante.copy(new_fecha_nacimiento = preguntarFechas(true)))
+                    "fecha_incorporacion" -> service.update(id, integrante.copy(new_fecha_incorporacion = preguntarFechas(false)))
+                    "salario" -> service.update(id, integrante.copy(newSalario = preguntarDoble("salario")))
+                    "pais" -> service.update(id, integrante.copy(newPais = preguntarString("pais")))
+                    "posicion" -> service.update(id, integrante.copy(newPosicion = preguntarPosicion()))
+                    "dorsal" -> service.update(id, integrante.copy(newDorsal = preguntarEntero("dorsal")))
+                    "goles" -> service.update(id, integrante.copy(newDorsal = preguntarEntero("goles")))
+                    "partidos_jugados" -> service.update(id, integrante.copy(newDorsal = preguntarEntero("partidos_jugados")))
+                }
+            }
+            if(integrante is Entrenador){
+                val campo = preguntarCampos(true)
+                when(campo){
+                    "nombre" -> service.update(id, integrante.copy(newNombre = preguntarString("nombre")))
+                    "apellidos" -> service.update(id, integrante.copy(newApellidos = preguntarString("apellidos")))
+                    "fecha_nacimiento" -> service.update(id, integrante.copy(new_fecha_nacimiento = preguntarFechas(true)))
+                    "fecha_incorporacion" -> service.update(id, integrante.copy(new_fecha_incorporacion = preguntarFechas(false)))
+                    "salario" -> service.update(id, integrante.copy(newSalario = preguntarDoble("salario")))
+                    "pais" -> service.update(id, integrante.copy(newPais = preguntarString("pais")))
+                    "especialidad" -> service.update(id, integrante.copy(newEspecialidad = preguntarEspecialidad()))
+                }
+            }
+        }catch (e: Exception){
+            println("${e.message}")
+        }
     }
-
+    fun preguntarCampos(jugador: Boolean): String{
+        if (jugador) {
+            println("¿Qué campo del jugador deseas acutualizar?" +
+                    "|1. Nombre |2. Apellidos |3. Fecha de Nacimiento |4. Fecha de incorporacion |5. Salario |6. Pais |7. Posicion |8. Dorsal |9. Altura |10. Peso |11. Goles |12. Partidos Jugados")
+            var opt: Int?
+            do {
+                opt = readln().toIntOrNull()
+                if (opt == null) println("Opcion no valida.")
+            }while (opt == null)
+            var campo: String = ""
+            when(opt) {
+                1 -> campo = "nombre"
+                2 -> campo = "apellidos"
+                3 -> campo = "fecha_nacimiento"
+                4 -> campo = "fecha_incorporacion"
+                5 -> campo = "salario"
+                6 -> campo = "pais"
+                7 -> campo = "posicion"
+                8 -> campo = "dorsal"
+                9 -> campo = "altura"
+                10 -> campo = "peso"
+                11 -> campo = "goles"
+                12 -> campo = "partidos_jugados"
+            }
+            return campo
+        }
+        else{
+            println("¿Qué campo del entrenador deseas acutualizar?" +
+                    "|1. Nombre |2. Apellidos |3. Fecha de Nacimiento |4. Fecha de incorporacion |5. Salario |6. Pais |7. Especialidad")
+            var opt: Int?
+            do {
+                opt = readln().toIntOrNull()
+                if (opt == null) println("Opcion no valida.")
+            }while (opt == null)
+            var campo: String = ""
+            when(opt) {
+                1 -> campo = "nombre"
+                2 -> campo = "apellidos"
+                3 -> campo = "fecha_nacimiento"
+                4 -> campo = "fecha_incorporacion"
+                5 -> campo = "salario"
+                6 -> campo = "pais"
+                7 -> campo = "especialidad"
+            }
+            return campo
+        }
+    }
     fun borrarMiembro() {
         val id = preguntarID()
 
