@@ -10,10 +10,20 @@ import org.example.models.Integrante
 import org.example.models.Jugador
 import org.lighthousegames.logging.logging
 import java.io.File
-
+/**
+ * Almacenamiento que Implementa la interfaz [EquipoStorage] para
+ * manejar el trato con archivos JSON para poder leer de un archivo
+ * un tipo de objeto o al reves
+ */
 class EquipoStorageJSON: EquipoStorage {
     private var logger = logging()
 
+    /**
+     * Permite leer de un archivo una lista de [Integrante]
+     * Lee el archivo como una lista de DTO de integrante y lo mapea al modelo segun va leyendo
+     * @throws [Exceptions.StorageException] Si el fichero no existe, no es un fichero o no se tienen permisos de lectura
+     * @return Lista de integrantes
+     */
     override fun fileRead(file: File): List<Integrante> {
         logger.debug { "Leyendo fichero JSON" }
 
@@ -32,6 +42,12 @@ class EquipoStorageJSON: EquipoStorage {
         return  listaIntegrantes
     }
 
+    /**
+     * Permite leer de un archivo una lista de [Integrante]
+     * Lee el archivo como una lista de DTO de integrante y lo mapea al modelo segun va leyendo
+     * @throws [Exceptions.StorageException] Si el fichero no existe, no es un fichero o no se tienen permisos de lectura
+     * @return Lista de integrantes
+     */
     override fun fileWrite(equipo: List<Integrante>, file: File) {
         logger.debug { "Escribiendo integrantes del equipo en fichero JSON" }
 

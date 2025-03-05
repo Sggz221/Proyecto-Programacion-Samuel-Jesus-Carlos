@@ -5,6 +5,24 @@ import kotlinx.serialization.Serializable
 import nl.adaptivity.xmlutil.serialization.XmlElement
 import nl.adaptivity.xmlutil.serialization.XmlValue
 
+/**
+ * Clase Serializable de Integrante pensada para un XML
+ * @property id Identificador del objeto
+ * @property nombre Nombre del integrante
+ * @property apellidos Apellidos del integrante
+ * @property fecha_nacimiento Fecha de nacimiento del integrante
+ * @property fecha_incorporacion Fecha de incorporacion al equipo del integrante
+ * @property pais Pais de origen del integrante
+ * @property especialidad Especializacion del integrante
+ * @property salario Salario del integrante
+ * @property isDeleted Campo de borrado logico del integrante
+ * @property posicion Posicion de la que juega el integrante
+ * @property dorsal Dorsal del integrante
+ * @property altura Altura
+ * @property peso Peso del integrante
+ * @property goles Numero de goles que ha marcado el integrante
+ * @property partidos_jugados Numero de partidos jugados por el integrante
+ */
 @Serializable
 @SerialName("personal")
 data class IntegranteXmlDTO(

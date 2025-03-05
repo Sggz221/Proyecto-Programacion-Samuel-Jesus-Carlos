@@ -9,6 +9,21 @@ import java.time.LocalDateTime
 
 /**
  * Crea una copia de un objeto de la clase Jugador
+ * @param newId Nuevo id que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newNombre Nuevo nombre que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newApellidos Nuevos apellidos que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param new_fecha_nacimiento Nueva fecha de nacimiento que recibira el objeto en la copia si desea actualizar, por defecto la misma que antes
+ * @param new_fecha_incorporacion Nueva fecha de incorporacion que recibira el objeto en la copia si desea actualizar, por defecto la misma que antes
+ * @param newPais Nuevo pais que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newSalario Nuevo salario que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newIsDeleted Nuevo campo de borrado que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newPosicion Nueva posicion que recibira el objeto en la copia si desea actualizar, por defecto la misma que antes
+ * @param newDorsal Nueva dorsal que recibira el objeto en la copia si desea actualizar, por defecto la misma que antes
+ * @param newAltura Nueva altura que recibira el objeto en la copia si desea actualizar, por defecto la misma que antes
+ * @param newPeso Nuevo peso que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newGoles Nuevo numero de goles que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param new_partidos_jugados Nuevo numero de partidos jugados que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @timeStamp Franja de tiempo que recibira el objeto, por defecto el momento en el que se llama a la funcion
  * @return La copia del objeto creado
  */
 fun Jugador.copy(
@@ -49,6 +64,15 @@ fun Jugador.copy(
 }
 /**
  * Crea una copia de un objeto de la clase Entrenador
+ * @param newId Nuevo id que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newNombre Nuevo nombre que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newApellidos Nuevos apellidos que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param new_fecha_nacimiento Nueva fecha de nacimiento que recibira el objeto en la copia si desea actualizar, por defecto la misma que antes
+ * @param new_fecha_incorporacion Nueva fecha de incorporacion que recibira el objeto en la copia si desea actualizar, por defecto la misma que antes
+ * @param newPais Nuevo pais que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newSalario Nuevo salario que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newIsDeleted Nuevo campo de borrado que recibira el objeto en la copia si desea actualizar, por defecto el mismo que antes
+ * @param newEspecialidad Nueva especialidad que recibira el objeto, por defecto la misma de antes
  * @return La copia del objeto creado
  */
 fun Entrenador.copy(

@@ -14,6 +14,16 @@ import java.io.File
 
 private val CACHE_SIZE = 5
 
+/**
+ * Clase Servicio que implementa [Service] y se le inyecta la Cache, almacenamiento, repositorio y validador
+ * @param repository [EquipoRepositoryImpl] Repositiorio de un equipo de futbol
+ * @param cache [CacheImpl] Cache que agiliza las consultas en memoria
+ * @param validator [IntegranteValidator] Validador de un [Integrante]
+ * @param storageCSV [EquipoStorageCSV] Almacenamiento encargado de gestionar las operaciones con ficheros CSV
+ * @param storageJSON [EquipoStorageJSON] Almacenamiento encargado de gestionar las operaciones con ficheros JSON
+ * @param storageXML [EquipoStorageXML] Almacenamiento encargado de gestionar las operaciones con ficheros XML
+ * @param storageBIN [EquipoStorageBIN] Almacenamiento encargado de gestionar las operaciones con ficheros BIN
+ */
 class ServiceImpl(
     private val repository: EquipoRepositoryImpl = EquipoRepositoryImpl(),
     private val cache: CacheImpl<Long, Integrante> = CacheImpl(CACHE_SIZE),
@@ -25,7 +35,10 @@ class ServiceImpl(
 ): Service {
     private val logger = logging()
 
-
+    /**
+     * Importa un fichero de una ruta especificada por parametro y segun su extension llama al almacenamiento indicado para su correcto manipulamiento
+     * @param filePath [String] Cadena de texto que indica la ruta de un archivo
+     */
     override fun importFromFile(filePath: String) {
         logger.debug { "Importando integrantes del fichero $filePath" }
 
@@ -52,6 +65,10 @@ class ServiceImpl(
         }
     }
 
+    /**
+     * Exporta un fichero de una ruta especificada por parametro y segun su extension llama al almacenamiento indicado para su correcto manipulamiento
+     * @param filePath [String] Cadena de texto que indica la ruta de un archivo
+     */
     override fun exportToFile(filePath: String) {
         logger.debug { "Exportando integrantes al fichero $filePath" }
 
@@ -73,11 +90,24 @@ class ServiceImpl(
         }
     }
 
+    /**
+     * Llama al repositiorio y devuelve una lista con todos los integrantes del equipo en memoria
+     * @return [List] de [Integrante]
+     */
     override fun getAll(): List<Integrante> {
         logger.debug { "Obteniendo todos los integrantes del equipo" }
         return repository.getAll()
     }
 
+    /**
+     * Llama al repositiorio y devuelve un [Integrante] en funcion de su id y lo guarda en la cache
+     * @param id [Long] Identificador del objeto
+     * @throws [Exceptions.NotFoundException] Si no encuentra al integrante
+     * @return [List] de [Integrante]
+     * @see [CacheImpl.get]
+     * @see [CacheImpl.put]
+     * @see [EquipoRepositoryImpl.getById]
+     */
     override fun getById(id: Long): Integrante {
         logger.debug { "Obteniendo el integrante del equipo con id $id" }
 
@@ -98,12 +128,28 @@ class ServiceImpl(
         return result
     }
 
+    /**
+     * Guarda a un [Integrante] en el repositorio despues de validarlo
+     * @return El integrante guardado
+     * @see [EquipoRepositoryImpl.save]
+     * @see [IntegranteValidator.validar]
+     */
     override fun save(integrante: Integrante): Integrante {
         logger.debug { "Guardando integrante" }
         validator.validar(integrante)
         return repository.save(integrante)
     }
 
+    /**
+     * Actualiza un integrante del equipo despues de validarlo
+     * @param id [Long] Identificador del objeto
+     * @param integrante [Integrante] Objeto que se quiere guardar
+     * @throws [Exceptions.NotFoundException] si no encuentra al integrante
+     * @return El integrante guardado
+     * @see [IntegranteValidator.validar]
+     * @see [EquipoRepositoryImpl.update]
+     * @see [CacheImpl.remove]
+     */
     override fun update(id: Long, integrante: Integrante): Integrante {
         logger.debug { "Actualizando integrante" }
         validator.validar(integrante)
@@ -119,6 +165,14 @@ class ServiceImpl(
         return actualizado
     }
 
+    /**
+     * Borra un integrante del repositorio y la cache en base a un Id
+     * @param id [Long] Identificador del objeto
+     * @throws [Exceptions.NotFoundException] si no encuentra al integrante
+     * @return El integrante
+     * @see [EquipoRepositoryImpl.delete]
+     * @see [CacheImpl.remove]
+     */
     override fun delete(id: Long): Integrante {
         logger.debug { "Borrando integrante" }
 
@@ -132,7 +186,15 @@ class ServiceImpl(
 
         return borrado
     }
-
+    /**
+     * Borra logicamente a un integrante, en esencia es igual a [update] solo que para un campo especifico de [Integrante.isDeleted]
+     * @param id [Long] Identificador del objeto
+     * @param integrante [Integrante] Objeto que se quiere guardar
+     * @throws [Exceptions.NotFoundException] si no encuentra al integrante
+     * @return El integrante guardado
+     * @see [EquipoRepositoryImpl.deleteLogical]
+     * @see [CacheImpl.remove]
+     */
     override fun deleteLogical(id: Long, integrante: Integrante): Integrante {
         logger.debug { "Borrando lógicamente integrante" }
 

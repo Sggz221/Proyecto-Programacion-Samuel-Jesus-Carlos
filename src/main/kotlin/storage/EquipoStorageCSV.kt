@@ -11,10 +11,18 @@ import org.lighthousegames.logging.logging
 import java.io.File
 import java.io.FileNotFoundException
 import java.time.LocalDateTime
-
+/**
+ * Almacenamiento que Implementa la interfaz [EquipoStorage] para manejar el trato con archivos CSV para poder leer de un archivo un tipo de objeto o al reves
+ */
 class EquipoStorageCSV: EquipoStorage {
     private var logger = logging()
 
+    /**
+     * Permite leer de un archivo una lista de [Integrante]
+     * Lee el archivo como una lista de DTO de integrante y lo mapea al modelo segun va leyendo
+     * @throws [Exceptions.StorageException] Si el fichero no existe, no es un fichero o no se tienen permisos de lectura
+     * @return Lista de integrantes
+     */
     override fun fileRead(file: File): List<Integrante> {
         logger.debug { "Leyendo fichero CSV" }
 
@@ -48,7 +56,11 @@ class EquipoStorageCSV: EquipoStorage {
                 ).toModel()
             }
     }
-
+    /**
+     * Escribe en un fichero dada una lista de [Integrante] y una ruta especificada
+     * @param equipo La lista de integrantes
+     * @param file El archivo donde se escribira la lista
+     */
     override fun fileWrite(equipo: List<Integrante>, file: File) {
         logger.debug { "Escribiendo integrantes del equipo en fichero CSV" }
 
@@ -68,7 +80,4 @@ class EquipoStorageCSV: EquipoStorage {
                 file.appendText("${it.id},${it.nombre},${it.apellidos},${it.fecha_nacimiento},${it.fecha_incorporacion},${it.salario},${it.pais},Entrenador,${it.especialidad},,,,,,\n")
             }
         }
-
-
-
 }}

@@ -1,19 +1,24 @@
 package org.example.view
 
 import org.example.extensions.copy
-import org.example.models.Entrenador
-import org.example.models.Especialidad
-import org.example.models.Jugador
-import org.example.models.Posicion
+import org.example.models.*
 import org.example.service.Service
 import org.example.service.ServiceImpl
 import java.io.File
 import java.time.LocalDate
+import javax.xml.crypto.Data
 
-
+/** Menu para seleccionar la operacion que elija el usuario
+ * @property service [ServiceImpl] Implementacion del servicio de integrantes del equipo.
+ * @property data [Consultas] Implementacion de una calse externa para realizar las consultas propuestas en l ejercicio sobre un fichero csv
+ */
 class Menu (
-    private val service: Service = ServiceImpl()
+    private val service: Service = ServiceImpl(),
+    private val data: Consultas = Consultas(),
 ) {
+    /**
+     * Menu que ejecuta el programa hasta que e usuario decida cerrar
+     */
     fun menu(){
         println("---- Aplicación de gestión de un equipo de fútbol ----")
         do{
@@ -23,6 +28,10 @@ class Menu (
         println("Cerrando aplicacion...")
     }
     // Funciones encapsuladas
+    /**
+     * Funcion que da opciones a elegir al usuario, recibe por consola y develve la opcion elegida como un Entero
+     * @return [Int] Numero representativo de la opcion elegida por el usuario
+     */
     private fun readOpt(): Int{
         var option = 0
         do {
@@ -40,6 +49,11 @@ class Menu (
         }while (option !in 1..8)
         return option
     }
+
+    /**
+     * Funcion que recibe un entero emitido por la funcion [readOpt] y ejecuta otra funcion en consecuencia
+     * @param opt [Int] Numero entero recibido por otra funcion
+     */
     fun callOperation(option: Int){
         when(option){
             1 -> cargarDatos()
@@ -48,11 +62,16 @@ class Menu (
             4 -> borrarMiembro()
             5 -> service.getAll().forEach {println(it)}
             6 -> exportarDatos()
-            7 -> {} // Consultas
+            7 -> data.consultas()
             8 -> {}
         }
     }
 
+    /**
+     * Pregunta por un formato de archivo al usuario entre [XML], [BIN], [CSV] y [JSON]
+     * @param importar [Boolean] Parametro que define si el texto que aparecera en pantalla tiene sentido para preguntar por una importacion de archivos o por una exportacion
+     * @return [String] Una cadena de texto que representa una de las extensiones permitidas en letra minuscula
+     */
     fun preguntarFormato(importar: Boolean): String{
         var option: Int
         do {
@@ -73,6 +92,10 @@ class Menu (
         return extension
     }
 
+    /**
+     * Pregunta por un nombre que es un [String] y sigue una expresion regular para poder ser empleado como un nombre de un archivo
+     * @return [String] El nombre escrito y verificado como cadena de texto
+     */
     fun preguntarNombre(): String {
         val regEx = """^[a-zA-Z0-9_-]+$""".toRegex()
         var nombre: String
@@ -86,6 +109,9 @@ class Menu (
         return nombre
     }
 
+    /**
+     * Exporta los datos a un archivo generado con [preguntarNombre] y [preguntarFormato] en la carpeta backup
+     */
     private fun exportarDatos() {
         val extension = preguntarFormato(false)
         val nombre = preguntarNombre()
@@ -93,7 +119,20 @@ class Menu (
         service.exportToFile(file.path)
     }
 
-
+    /**
+     * Actualiza un miembro preguntando por su ID con [preguntarID] y despues de inferenciar si es un [Jugador] o un [Entrenador]
+     * pregunta los campos que se quieren cambiar usando [preguntarCampos] y en base al nombre del campo usar el servicio [ServiceImpl]
+     * para crear una copia del objeto y actualizar uno de los campos permitidos elegido por el usuario
+     * @see [preguntarString]
+     * @see [preguntarFechas]
+     * @see [preguntarDoble]
+     * @see [preguntarString]
+     * @see [preguntarEntero]
+     * @see [preguntarCampos]
+     * @see [preguntarPosicion]
+     * @see [preguntarEspecialidad]
+     * @throws Exception si no encuentra un elemento
+     */
     fun actualizarMiembro() {
         val id  = preguntarID()
         try {
@@ -129,6 +168,12 @@ class Menu (
             println("${e.message}")
         }
     }
+
+    /**
+     * Pregunta los campos al usuario en funcion de un parametro para saber si tiene que preguntar los campos de un [Entrenador] o un [Jugador]
+     * @param jugador Determina si se va a preguntar por un Jugador si es [true] o si se va a preguntar por un entrenador si es [false]
+     * @return [String] El campo
+     */
     fun preguntarCampos(jugador: Boolean): String{
         if (jugador) {
             println("¿Qué campo del jugador deseas acutualizar?" +
@@ -176,6 +221,12 @@ class Menu (
             return campo
         }
     }
+
+    /**
+     * Borra un miembro logicamente cambiando el campo [Jugador.isDeleted] en base a un id usando [preguntarID].
+     * En esencia funciona igual que [actualizarMiembro] pero para un campo en especifico comun a [Jugador] y a [Entrenador]
+     * @throws Exception Si no encuentra el integrante
+     */
     fun borrarMiembro() {
         val id = preguntarID()
 
@@ -187,6 +238,10 @@ class Menu (
         }
     }
 
+    /**
+     * Pregunta un ID al usuario
+     * @return [Long] Devuelve el ID
+     */
     fun preguntarID(): Long {
         var input: Long?
 
@@ -199,7 +254,11 @@ class Menu (
         return input
     }
 
-
+    /**
+     * Importa los datos a la memoria de un archivo de nombre personal y extension elegida por el usuario usando [preguntarFormato]
+     * y el servicio [ServiceImpl]
+     * @throws Exception Si no consigue leer el fichero
+     */
     fun cargarDatos(){
         val formato = preguntarFormato(true)
         val file = File("data", "personal.${formato}")
@@ -213,6 +272,10 @@ class Menu (
         println("Fichero cargado con exito")
     }
 
+    /**
+     * Pregunta un rol al usuario
+     * @return [String] La extension del archivo en letra minuscula
+     */
     fun preguntarRol (): String {
         var rol: String
         do{
@@ -224,6 +287,11 @@ class Menu (
         return rol
     }
 
+    /**
+     * Pregunta un campo de [Jugador] o [Entrenador] como [String]
+     * @param campo El nombre del campo que va a preguntar
+     * @return [String] El valor del campo dado por el usuario
+     */
     fun preguntarString (campo: String): String {
 
         if (campo == "nombre") println("Escriba el nombre:")
@@ -235,6 +303,10 @@ class Menu (
         return input
     }
 
+    /**
+     * Pregunta una fecha al usuario haciendo un filtro a traves de una expresion regular
+     * @throws Exception Si no consigue parsear la fecha
+     */
     fun preguntarFechas (nacimiento: Boolean): LocalDate {
         val regex = """^\d{4}-(0?[1-9]|1[0-2])-(0?[1-9]|[12]\d|3[01])$""".toRegex()
         var fechaFormato = LocalDate.now()
@@ -252,7 +324,7 @@ class Menu (
                     fechaFormato = LocalDate.parse(fecha)
                 }
                 catch (e: Exception) {
-                    fecha = "a"
+                    fecha = "a" // Para que falle la expresion regular
                 }
             }
             if(!regex.matches(fecha)) println("Fecha no valida.")
@@ -261,6 +333,11 @@ class Menu (
         return fechaFormato
     }
 
+    /**
+     * Pregunta un campo [Double] de [Jugador] o [Integrante]
+     * @param campo Para saber por que campo preguntar
+     * @return [Dopuble] El valor como un doble
+     */
     fun preguntarDoble (campo: String): Double {
         var input: Double
         do {
@@ -275,6 +352,10 @@ class Menu (
         return input
     }
 
+    /**
+     * Pregunta una [Posicion] al usuario dandole unas opciones.
+     * @return [Posicion] La posicion elegida
+     */
     fun preguntarPosicion(): Posicion{
         var option: Int
         do {
@@ -292,6 +373,11 @@ class Menu (
         return posicion
     }
 
+    /**
+     * Pregunta un campo [Int] de [Jugador] o [Entrenador]
+     * @param campo Para saber por que campo preguntar
+     * @return [Int] El valor del campo
+     */
     fun preguntarEntero(campo: String): Int{
         var input: Int?
 
@@ -307,6 +393,10 @@ class Menu (
         return input
     }
 
+    /**
+     * Pregunta una [Especialidad] al usuario dandole unas opciones
+     * @return [Especialidad] La especialidad elegida por el usuario
+     */
     fun preguntarEspecialidad (): Especialidad {
         var option: Int
         do {
@@ -323,6 +413,10 @@ class Menu (
         return especialidad
     }
 
+    /**
+     * Crea un objeto [Jugador] o [Entrenador] en base a [preguntarRol]
+     * @throws Exception si no consigue guardar el integrante usando el [ServiceImpl]
+     */
     fun crearMiembro(){
         var rol = preguntarRol()
 

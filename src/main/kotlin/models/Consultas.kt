@@ -5,7 +5,9 @@ import org.example.service.ServiceImpl
 import java.io.File
 import java.time.LocalDate
 
-
+/**
+ * @property service [ServiceImpl] Implementacion del servicio para poder realizar las consultas sobre un fichero
+ */
 class Consultas(private val service:ServiceImpl = ServiceImpl()) {
 
     fun consultas (){
@@ -161,8 +163,6 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
 
         println("28. Salario promedio de los jugadores agrupados por su país de origen, y dentro de cada grupo, el jugador con el salario más bajo y alto.")
         service.getAll().filterIsInstance<Jugador>().groupBy { it.pais }.mapValues { (_,jugadores) ->
-            val salario = jugadores.map { it.salario }
-            Pair(salario.maxOrNull(), salario.minOrNull())
-        }.forEach{ println(it)}
+            Triple(jugadores.map{it.salario}.average(), jugadores.maxBy { it.salario }, jugadores.minBy{ it.salario} )}.forEach{ println(it)}
     }
 }

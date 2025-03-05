@@ -6,9 +6,16 @@ import org.example.models.Jugador
 import org.lighthousegames.logging.logging
 import java.time.LocalDate
 
+/**
+ * Clase que valida un [Integrante]
+ */
 class IntegranteValidator {
     private var logger = logging()
 
+    /**
+     * Valida un integrante en base a una serie de comprobaciones
+     * @param integrante [Integrante] Es el integrante a validar
+     */
     fun validar (integrante: Integrante) {
         logger.debug { "Validando campos del integrante del equipo" }
 
@@ -45,6 +52,10 @@ class IntegranteValidator {
         }
     }
 
+    /**
+     * Valida un integrante en base a una serie de comprobaciones
+     * @param integrante [Integrante] Es el integrante a validar
+     */
     private fun validarJugador (jugador: Jugador) {
         logger.debug { "Validando campos específicos del jugador" }
 
@@ -68,5 +79,4 @@ class IntegranteValidator {
             throw Exceptions.InvalidoException("El número de partidos jugados no puede ser negativo")
         }
     }
-
 }

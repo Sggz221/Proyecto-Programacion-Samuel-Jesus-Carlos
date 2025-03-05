@@ -9,6 +9,10 @@ import org.example.models.Integrante
 import org.example.models.Jugador
 import java.time.LocalDate
 
+/**
+ * Funcion de extension que convierte [IntegranteDTO] a un objeto [Integrante] [Jugador] o [Entrenador] segun [IntegranteDTO.rol]
+ * @return La version [Integrante] de la DTO. O bien [Jugador] o [Entrenador]
+ */
 fun IntegranteDTO.toModel(): Integrante {
     return if(this.rol == "Jugador"){
         Jugador(
@@ -40,7 +44,10 @@ fun IntegranteDTO.toModel(): Integrante {
         )
     }
 }
-
+/**
+ * Funcion de extension que convierte [IntegranteXmlDTO] a un objeto [Integrante] [Jugador] o [Entrenador] segun [IntegranteXmlDTO.rol]
+ * @return La version [Integrante] de la DTO. O bien [Jugador] o [Entrenador]
+ */
 fun IntegranteXmlDTO.toModel(): Integrante{
     return if(this.rol == "Jugador"){
         Jugador(
@@ -73,6 +80,10 @@ fun IntegranteXmlDTO.toModel(): Integrante{
     }
 }
 
+/**
+ * Funcion de extension que convierte un [Entrenador] a [IntegranteXmlDTO]
+ * @return la version [IntegranteXmlDTO] del objeto con los campos que no tiene vacios
+ */
 fun Entrenador.toXmlDTO (): IntegranteXmlDTO {
     return IntegranteXmlDTO(
         id = id,
@@ -92,7 +103,10 @@ fun Entrenador.toXmlDTO (): IntegranteXmlDTO {
         partidos_jugados = ""
     )
 }
-
+/**
+ * Funcion de extension que convierte un [Jugador] a [IntegranteXmlDTO]
+ * @return la version [IntegranteXmlDTO] del objeto con los campos que no tiene vacios
+ */
 fun Jugador.toXmlDTO (): IntegranteXmlDTO {
     return IntegranteXmlDTO(
         id = id,
@@ -113,6 +127,10 @@ fun Jugador.toXmlDTO (): IntegranteXmlDTO {
     )
 }
 
+/**
+ * Funcion de extension que convierte un [Entrenador] en su version [IntegranteDTO]
+ * @return la version [IntegranteDTO] del objeto con los campos que no tiene vacios
+ */
 fun Entrenador.toDto (): IntegranteDTO {
     return IntegranteDTO(
         id = id,
@@ -132,7 +150,10 @@ fun Entrenador.toDto (): IntegranteDTO {
         partidos_jugados = null
     )
 }
-
+/**
+ * Funcion de extension que convierte un [Jugador] en su version [IntegranteDTO]
+ * @return la version [IntegranteDTO] del objeto con los campos que no tiene vacios
+ */
 fun Jugador.toDto (): IntegranteDTO {
     return IntegranteDTO(
         id = id,

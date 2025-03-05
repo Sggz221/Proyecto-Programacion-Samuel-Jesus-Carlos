@@ -11,8 +11,20 @@ import org.lighthousegames.logging.logging
 import java.io.File
 import java.io.RandomAccessFile
 
+/**
+ * Almacenamiento que Implementa la interfaz [EquipoStorage] para
+ * manejar el trato con archivos binarios para poder leer de un archivo
+ * un tipo de objeto o al reves
+ */
 class EquipoStorageBIN: EquipoStorage {
     private var logger = logging()
+
+    /**
+     * Permite leer de un archivo una lista de [Integrante] usa la codificacion UTF-8
+     * Lee el archivo como una lista de DTO de integrante y lo mapea al modelo segun va leyendo
+     * @throws [Exceptions.StorageException] Si el fichero no existe, no es un fichero o no se tienen permisos de lectura
+     * @return Lista de integrantes
+     */
     override fun fileRead(file: File): List<Integrante> {
         logger.debug{"Leyendo archivo BIN"}
 
@@ -67,6 +79,11 @@ class EquipoStorageBIN: EquipoStorage {
         return equipo.map{it.toModel()}
     }
 
+    /**
+     * Escribe en un fichero dada una lista de [Integrante] y una ruta especificada
+     * @param equipo La lista de integrantes
+     * @param file El archivo donde se escribira la lista
+     */
     override fun fileWrite(equipo: List<Integrante>, file: File) {
         logger.debug { "Escribiendo archivo BIN" }
 

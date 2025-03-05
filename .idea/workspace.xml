@@ -4,98 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="ca860b65-21dc-4eae-a191-cfe582155d83" name="Changes" comment="">
+    <list default="true" id="f12809af-f7ba-4388-b6e5-c0746d98e451" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cache/Cache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cache/Cache.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cache/CacheImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cache/CacheImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dto/EquipoDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dto/EquipoDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dto/IntegranteDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dto/IntegranteDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dto/IntegranteXmlDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dto/IntegranteXmlDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/exceptions/Exceptions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/exceptions/Exceptions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/extensions/extensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/extensions/extensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mapper/IntegranteMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mapper/IntegranteMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Consultas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Consultas.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Entrenador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Entrenador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Especialidad.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Especialidad.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Integrante.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Integrante.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Jugador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Jugador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Posicion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Posicion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repositories/CrudRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/CrudRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/Service.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/ServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/ServiceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageBIN.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageBIN.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageCSV.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageCSV.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageJSON.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageJSON.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageXML.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageXML.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/validator/IntegranteValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/validator/IntegranteValidator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/Menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/Menu.kt" afterDir="false" />
-=======
-    <list default="true" id="696374b4-29ad-4f97-823f-6910bd45426c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/personal.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" />
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="untitled" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="untitled" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="untitled" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-<<<<<<< Updated upstream
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;charlieecy&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/charlieecy/Proyecto-Programacion-Samuel-Jesus-Carlos.git&quot;,
-    &quot;accountId&quot;: &quot;145a9955-517d-4db0-8c0e-586b7b9f6e49&quot;
-  }
-}</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/kotlin/dto/IntegranteDTO.kt" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageBIN.kt" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/kotlin/view/Menu.kt" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2tl97TPEsbVfGslC9X8NtqAm7lA" />
-=======
->>>>>>> Stashed changes
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "features"
-  }
-}]]></component>
   <component name="TaskManager">
-<<<<<<< Updated upstream
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ca860b65-21dc-4eae-a191-cfe582155d83" name="Changes" comment="" />
-      <created>1740915627380</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1740915627380</updated>
-      <workItem from="1740915629437" duration="46000" />
-      <workItem from="1740915679073" duration="81000" />
-      <workItem from="1740997275223" duration="2167000" />
-      <workItem from="1741078224370" duration="14607000" />
-    </task>
-=======
->>>>>>> Stashed changes
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
