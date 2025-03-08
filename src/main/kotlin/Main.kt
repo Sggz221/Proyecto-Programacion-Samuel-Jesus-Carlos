@@ -1,5 +1,6 @@
 package org.example
 
+import org.example.configuration.Confifuration
 import org.example.models.*
 import org.example.repositories.EquipoRepositoryImpl
 import org.example.service.ServiceImpl
