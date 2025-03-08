@@ -1,13 +1,13 @@
 package org.example.view
 
 import org.example.configuration.Confifuration
+import org.example.consults.Consultas
 import org.example.extensions.copy
 import org.example.models.*
 import org.example.service.Service
 import org.example.service.ServiceImpl
 import java.io.File
 import java.time.LocalDate
-import javax.xml.crypto.Data
 
 /** Menu para seleccionar la operacion que elija el usuario
  * @property service [ServiceImpl] Implementacion del servicio de integrantes del equipo.

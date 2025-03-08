@@ -1,6 +1,8 @@
-package org.example.models
+package org.example.consults
 
-import nl.adaptivity.xmlutil.dom2.ProcessingInstruction
+import org.example.models.Entrenador
+import org.example.models.Jugador
+import org.example.models.Posicion
 import org.example.service.ServiceImpl
 import java.io.File
 import java.time.LocalDate
@@ -112,7 +114,7 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         println("--------------------------------------")
 
         println("20. Jugadores que han anotado más goles que el promedio de su posición.")
-        val golesDelantero = service.getAll().filterIsInstance<Jugador>().filter { it.posicion == Posicion.DELANTERO}.map { it.goles}.average()
+        val golesDelantero = service.getAll().filterIsInstance<Jugador>().filter { it.posicion == Posicion.DELANTERO }.map { it.goles}.average()
         service.getAll().filterIsInstance<Jugador>().filter { it.posicion == Posicion.DELANTERO && it.goles > golesDelantero}.forEach { it }
 
         println("--------------------------------------")
