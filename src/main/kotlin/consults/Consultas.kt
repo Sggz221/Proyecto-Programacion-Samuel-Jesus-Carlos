@@ -20,8 +20,14 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         service.getAll().forEach {println(it)}
         println("--------------------------------------")
 
-        //Println("1. Listados de personal agrupados por entrenadores y jugadores.")
-        //service.getAll().groupBy {it is Jugador || it is Entrenador}.forEach { println(it) }
+        println("1. Listados de personal agrupados por entrenadores y jugadores.")
+        val todos = service.getAll()
+        val (listaJugadores, listaEntrenadores) = todos.partition { it is Jugador }
+        println("Lista de JUGADORES:")
+        listaJugadores.forEach {println(it)}
+        println("Lista de ENTRENADORES:")
+        listaEntrenadores.forEach {println(it)}
+
 
         println("--------------------------------------")
 
