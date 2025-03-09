@@ -71,12 +71,12 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         println("--------------------------------------")
 
         println("10. Número total de partidos jugados por todos los jugadores.")
-        service.getAll().filterIsInstance<Jugador>().groupBy { it.nombre }.mapValues { (_,jugadores) -> jugadores.map { it.partidos_jugados } }.forEach { println(it) }
+        println("Partidos jugados en total: " + service.getAll().filterIsInstance<Jugador>().sumOf { it.partidos_jugados })
 
         println("--------------------------------------")
 
         println("11. Jugadores agrupados por el año de su incorporación al club.")
-        service.getAll().filterIsInstance<Jugador>().groupBy { it.fecha_incorporacion }.forEach { println(it) }
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.fecha_incorporacion.year }.forEach { println(it) }
 
         println("--------------------------------------")
 
@@ -95,9 +95,10 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         println("--------------------------------------")
         println("15. Listado de todos los jugadores que tienen un dorsal par.")
         service.getAll().filterIsInstance<Jugador>().filter { it.dorsal % 2 == 0 }.forEach { println(it) }
-        //no muestra nada ya que no hay nada
+
+
         println("--------------------------------------")
-        println("16. Jugadores que han jugado menos de 5 partidos.")
+        println("16. Jugadores que han jugado menos de 5 partidos.") //no muestra nada ya que no hay nada
         service.getAll().filterIsInstance<Jugador>().filter { it.partidos_jugados < 5 }.forEach { println(it) }
 
         println("--------------------------------------")
@@ -106,22 +107,25 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
             val media:Double = it.goles.toDouble() / it.partidos_jugados
             println(it.id.toString()+ " " + it.nombre + " " + media)
         }
+
         //filtro por jugador ya que entrenador no tiene altura
         println("--------------------------------------")
         println("18. Listado de jugadores que tienen una altura superior a la media del equipo.")
-        val altura = service.getAll().filterIsInstance<Jugador>().map { it.altura }.average()
-        service.getAll().filterIsInstance<Jugador>().filter { it.altura > altura }.forEach { println(it) }
+        val alturaMedia = service.getAll().filterIsInstance<Jugador>().map { it.altura }.average()
+        service.getAll().filterIsInstance<Jugador>().filter { it.altura > alturaMedia }.forEach { println(it) }
 
-        //no muestra nada ya que no hay nada
+
         println("--------------------------------------")
-        println("19. Entrenadores que se incorporaron al club en los últimos 5 años.")
+        println("19. Entrenadores que se incorporaron al club en los últimos 5 años.") //no muestra nada ya que no hay nada
         service.getAll().filterIsInstance<Entrenador>().filter { (LocalDate.now().year - it.fecha_incorporacion.year) <=5  }.forEach { println(it) }
 
         println("--------------------------------------")
 
         println("20. Jugadores que han anotado más goles que el promedio de su posición.")
-        val golesDelantero = service.getAll().filterIsInstance<Jugador>().filter { it.posicion == Posicion.DELANTERO }.map { it.goles}.average()
-        service.getAll().filterIsInstance<Jugador>().filter { it.posicion == Posicion.DELANTERO && it.goles > golesDelantero}.forEach { it }
+        service.getAll().filterIsInstance<Jugador>().groupBy { it.posicion }.mapValues { (posicion,jugadores) ->
+            var mediaGolesPosicion = jugadores.map { it.goles }.average()
+            jugadores.filter{it.goles > mediaGolesPosicion}.forEach { println(posicion.toString() + ": " + it) }
+        }
 
         println("--------------------------------------")
 
@@ -139,7 +143,7 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         println("--------------------------------------")
 
         println("23. Total del salario pagado, agrupados por año de incorporación.")
-        println(service.getAll().groupBy { it.fecha_incorporacion }.mapValues { (_,jugadores) -> jugadores.sumOf { it.salario } } )
+        println(service.getAll().groupBy { it.fecha_incorporacion.year }.mapValues { (_,jugadores) -> jugadores.sumOf { it.salario } } )
 
         println("--------------------------------------")
 
@@ -152,7 +156,7 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
         service.getAll().filterIsInstance<Jugador>().groupBy { it.posicion }.mapValues { (_,jugadores) ->
             val maxGoles = jugadores.maxBy { it.goles }
             val goles = jugadores.map { it.goles }
-            Pair(goles.maxOrNull(), maxGoles)
+            Triple(goles.average(), goles.maxOrNull(), maxGoles)
         }.forEach{ println(it)}
 
         println("--------------------------------------")
@@ -164,7 +168,7 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
 
 
         println("27. Jugadores agrupados por década de nacimiento, y dentro de cada grupo, el promedio de partidos jugados.")
-        service.getAll().filterIsInstance<Jugador>().groupBy { it.fecha_nacimiento }.mapValues { (_,jugadores) -> jugadores.map { it.partidos_jugados }.average() }.forEach { println(it) }
+        service.getAll().filterIsInstance<Jugador>().groupBy { (it.fecha_nacimiento.year /10) * 10 }.mapValues { (_,jugadores) -> jugadores.map { it.partidos_jugados }.average() }.forEach { println(it) }
 
 
         println("--------------------------------------")

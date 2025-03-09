@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12809af-f7ba-4388-b6e5-c0746d98e451" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/service/ServiceImplTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/view/MenuTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cache/CacheImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cache/CacheImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/personalOutput.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/personalOutput.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/personalOutput.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/personalOutput.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/personalOutput.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/personalOutput.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +88,13 @@
     "Gradle.ServiceImplTest.importFromFileCSV.executor": "Coverage",
     "Gradle.ServiceImplTest.update.executor": "Coverage",
     "Gradle.ServiceImplTest.updateNull.executor": "Run",
+    "Gradle.Tests in 'untitled.test'.executor": "Coverage",
     "Kotlin.MainKt.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "features",
@@ -112,20 +116,58 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="view" />
       <recent name="service" />
       <recent name="repositories" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Tests in 'untitled.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'untitled.test'" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f12809af-f7ba-4388-b6e5-c0746d98e451" name="Changes" comment="" />
+      <created>1741555752874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741555752874</updated>
+      <workItem from="1741555756219" duration="533000" />
+    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +204,7 @@
     <SUITE FILE_PATH="coverage/untitled$ServiceImplTest_update.ic" NAME="ServiceImplTest.update Coverage Results" MODIFIED="1741548216062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/Main_kt$EquipoRepositoryImplTest_deleteLogical.ic" NAME="EquipoRepositoryImplTest.deleteLogical Coverage Results" MODIFIED="1741523660320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/untitled$ConfigurationTest_leerDeafultValues.ic" NAME="ConfigurationTest.leerDeafultValues Coverage Results" MODIFIED="1741524650849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/untitled$Tests_in__untitled_test_.ic" NAME="Tests in 'untitled.test' Coverage Results" MODIFIED="1741552664790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/untitled$IntegranteValidatorTest.ic" NAME="IntegranteValidatorTest Coverage Results" MODIFIED="1741466934521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/untitled$EquipoRepositoryImplTest_getById.ic" NAME="EquipoRepositoryImplTest.getById Coverage Results" MODIFIED="1741464606835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/untitled$EquipoRepositoryImplTest.ic" NAME="EquipoRepositoryImplTest Coverage Results" MODIFIED="1741530867892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
