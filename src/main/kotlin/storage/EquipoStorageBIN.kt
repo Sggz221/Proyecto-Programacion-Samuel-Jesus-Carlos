@@ -28,11 +28,7 @@ class EquipoStorageBIN: EquipoStorage {
     override fun fileRead(file: File): List<Integrante> {
         logger.debug{"Leyendo archivo BIN"}
 
-        if (!file.exists()) throw Exceptions.StorageException("El fichero no existe")
-
-        if (!file.isFile) throw Exceptions.StorageException("La ruta especificada no es un fichero")
-
-        if (!file.canRead() || file.length() == 0L) throw Exceptions.StorageException("No se tienen permisos de lectura o el fichero está vacío")
+        if (!file.exists() || !file.isFile || !file.canRead()) throw Exceptions.StorageException("El fichero no existe, la ruta especificada no es un fichero o no se tienen permisos de lectura")
 
         val equipo = mutableListOf<IntegranteDTO>() // Mutable para poder añadir sobre la marcha los objetos
 

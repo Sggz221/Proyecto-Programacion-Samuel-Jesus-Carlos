@@ -26,11 +26,7 @@ class EquipoStorageXML:EquipoStorage {
     override fun fileRead(file: File): List<Integrante> {
         logger.debug { "Leyendo fichero XML" }
 
-        if (!file.exists()) throw Exceptions.StorageException("El fichero no existe")
-
-        if (!file.isFile) throw Exceptions.StorageException("La ruta especificada no es un fichero")
-
-        if (!file.canRead()) throw Exceptions.StorageException("No se tienen permisos de lectura")
+        if (!file.exists() || !file.isFile || !file.canRead()) throw Exceptions.StorageException("El fichero no existe, la ruta especificada no es un fichero o no se tienen permisos de lectura")
 
         val xml = XML {}
 
