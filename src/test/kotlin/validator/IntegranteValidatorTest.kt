@@ -6,12 +6,12 @@ import org.example.models.Especialidad
 import org.example.models.Jugador
 import org.example.models.Posicion
 import org.example.validator.IntegranteValidator
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertDoesNotThrow
 import java.time.LocalDate
 import java.time.LocalDateTime
 import org.junit.jupiter.api.assertThrows
-import kotlin.test.assertEquals
 
 class IntegranteValidatorTest {
 

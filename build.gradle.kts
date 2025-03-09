@@ -14,7 +14,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
     implementation("org.lighthousegames:logging:1.5.0")
     implementation("ch.qos.logback:logback-classic:1.5.12")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
