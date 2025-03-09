@@ -6,6 +6,6 @@ package org.example.configuration
  * @property backupDirectory directorio en el que se exportarán los ficheros
  */
 data class ConfigurationProperties(
-    val dataDirectory: String = "data",
-    val backupDirectory: String = "backup",
+    val dataDirectory: String,
+    val backupDirectory: String,
 )

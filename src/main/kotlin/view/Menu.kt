@@ -1,6 +1,6 @@
 package org.example.view
 
-import org.example.configuration.Confifuration
+import org.example.configuration.Configuration
 import org.example.consults.Consultas
 import org.example.extensions.copy
 import org.example.models.*
@@ -116,7 +116,7 @@ class Menu (
     private fun exportarDatos() {
         val extension = preguntarFormato(false)
         val nombre = preguntarNombre()
-        val file = File(Confifuration.configurationProperties.backupDirectory, "${nombre}.${extension}")
+        val file = File(Configuration.configurationProperties.backupDirectory, "${nombre}.${extension}")
         service.exportToFile(file.path)
     }
 
@@ -262,7 +262,7 @@ class Menu (
      */
     fun cargarDatos(){
         val formato = preguntarFormato(true)
-        val file = File(Confifuration.configurationProperties.dataDirectory, "personal.${formato}")
+        val file = File(Configuration.configurationProperties.dataDirectory, "personal.${formato}")
 
         println("Leyendo fichero...")
         try {

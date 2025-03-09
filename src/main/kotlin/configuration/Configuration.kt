@@ -10,7 +10,7 @@ import kotlin.io.path.pathString
  * Clase que representa la configuración del programa.
  * @property configurationProperties Propiedades de la configuración
  */
-object Confifuration {
+object Configuration {
     private val logger = logging()
     val configurationProperties: ConfigurationProperties = loadConfig()
 
@@ -34,12 +34,12 @@ object Confifuration {
         val directorioActual = System.getProperty("user.dir")
 
         var directorioDataProperties: String? = propiedades.getProperty("data.directory")
-        if (directorioDataProperties == null) {
+        if (directorioDataProperties.isNullOrEmpty()) {
             directorioDataProperties = "data"
         }
 
         var directorioBackupProperties: String? = propiedades.getProperty("backup.directory")
-        if (directorioBackupProperties == null) {
+        if (directorioBackupProperties.isNullOrEmpty()) {
             directorioBackupProperties = "backup"
         }
 
