@@ -12,7 +12,7 @@ class CacheImpl<K, V>(private val capacidad: Int) : Cache<K, V> {
     /**
      * Filosofia LRU par la cache (Last Recently Used) Obtiene el elemento menos usado en la cache y lo elimina para dar paso a nuevos archivos
      */
-    private val cacheLRU: LinkedHashMap<K, V> = object: LinkedHashMap<K, V>(capacidad, 0.75f, true) {
+    private val cacheLRU: LinkedHashMap<K, V> = object: LinkedHashMap<K, V>(capacidad, 1.0f, true) {
         override fun removeEldestEntry(eldest: MutableMap.MutableEntry<K, V>?): Boolean {
             logger.debug { "Alcanzado el tamaño máximo: eliminando elemento más antiguo de la cache" }
             return size > capacidad
