@@ -41,6 +41,7 @@ class EquipoRepositoryImpl: EquipoRepository<Long, Integrante> {
             equipo[id] = entity.copy(newId = id, timeStamp = timeStamp)
         }
         else if (entity is Entrenador) {
+
             equipo[id] = entity.copy(newId = id, timeStamp = timeStamp)
         }
         return equipo[id]!!
