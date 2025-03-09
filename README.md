@@ -26,14 +26,14 @@ El club de fútbol **New Team**, ha confiado en nosotros para implementar un sis
 
 ### 🛠️ Funcionalidades CRUD y de gestión
 Se ha implementado un **menú interactivo** con las siguientes opciones:
-   |1. Cargar datos desde fichero
-   |2. Crear un miebro del equipo
-   |3. Actualizar un miembro del equipo
-   |4. Eliminar un miembro del equipo
-   |5. Mostrar miembros
-   |6. Exportar equipo a fichero
-   |7. Imprimir conusltas del equipo
-   |8. Salir de la aplicacion
+   - |1. Cargar datos desde fichero
+   - |2. Crear un miebro del equipo
+   - |3. Actualizar un miembro del equipo
+   - |4. Eliminar un miembro del equipo
+   - |5. Mostrar miembros
+   - |6. Exportar equipo a fichero
+   - |7. Imprimir conusltas del equipo
+   - |8. Salir de la aplicacion
 
 ### 🔍 Consultas Disponibles
 El sistema permite realizar múltiples consultas, entre ellas:
