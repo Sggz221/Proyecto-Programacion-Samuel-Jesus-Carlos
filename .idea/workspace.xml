@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12809af-f7ba-4388-b6e5-c0746d98e451" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/configuration/ConfigurationTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/repositories/EquipoRepositoryImplTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/configuration/Confifuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/configuration/Configuration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/configuration/ConfigurationProperties.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/configuration/ConfigurationProperties.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/Menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/Menu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Integrante.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Integrante.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepositoryImpl.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageOptionsProvider">
-    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -29,9 +23,6 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -49,8 +40,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Object" />
-        <option value="Kotlin Data Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -82,52 +71,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build Proyecto-Programacion-Samuel-Jesus-Carlos.executor": "Run",
-    "Gradle.CacheImplTest.executor": "Run",
-    "Gradle.ConfifurationTest.devolverException.executor": "Coverage",
-    "Gradle.ConfifurationTest.executor": "Coverage",
-    "Gradle.ConfigurationTest.executor": "Coverage",
-    "Gradle.ConfigurationTest.leerDeafultValues.executor": "Run",
-    "Gradle.IntegranteValidatorTest.executor": "Coverage",
-    "Kotlin.MainKt.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "features",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sggz2/Desktop/Proyecto-Programacion-Samuel-Jesus-Carlos/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build Proyecto-Programacion-Samuel-Jesus-Carlos.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;features&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/IdeaProjects/TestsValidadorDNI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sggz2\Desktop\Proyecto-Programacion-Samuel-Jesus-Carlos\src\test\resources" />
-      <recent name="C:\Users\carlo\Desktop\proyecto\Proyecto-Programacion-Samuel-Jesus-Carlos\data" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="consults" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="configuration" />
-      <recent name="Cache" />
-      <recent name="validator" />
       <recent name="repositories" />
     </key>
   </component>
@@ -141,14 +114,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="f12809af-f7ba-4388-b6e5-c0746d98e451" name="Changes" comment="" />
-      <created>1741512757725</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1741512757725</updated>
-      <workItem from="1741512764201" duration="259000" />
-    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,11 +131,15 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/untitled$ConfigurationTest_leerDeafultValues.ic" NAME="ConfigurationTest.leerDeafultValues Coverage Results" MODIFIED="1741524650849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/untitled$IntegranteValidatorTest.ic" NAME="IntegranteValidatorTest Coverage Results" MODIFIED="1741466934521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/untitled$ConfigurationTest.ic" NAME="ConfigurationTest Coverage Results" MODIFIED="1741525357100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/untitled$CacheImplTest.ic" NAME="CacheImplTest Coverage Results" MODIFIED="1741466169748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/untitled$ConfifurationTest.ic" NAME="ConfifurationTest Coverage Results" MODIFIED="1741522120568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/untitled$ConfifurationTest_devolverException.ic" NAME="ConfifurationTest.devolverException Coverage Results" MODIFIED="1741523388230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Main_kt$EquipoRepositoryImplTest_deleteLogical.ic" NAME="EquipoRepositoryImplTest.deleteLogical Coverage Results" MODIFIED="1741523660320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Main_kt$EquipoRepositoryImplTest_getAll.ic" NAME="EquipoRepositoryImplTest.getAll Coverage Results" MODIFIED="1741503150009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Main_kt$EquipoRepositoryImplTest.ic" NAME="EquipoRepositoryImplTest Coverage Results" MODIFIED="1741523610537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Main_kt$EquipoRepositoryImplTest_delete.ic" NAME="EquipoRepositoryImplTest.delete Coverage Results" MODIFIED="1741514674876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/untitled$MainKt.ic" NAME="MainKt Coverage Results" MODIFIED="1741529646390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/untitled$EquipoRepositoryImplTest_delete.ic" NAME="EquipoRepositoryImplTest.delete Coverage Results" MODIFIED="1741462046724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Main_kt$EquipoRepositoryImplTest_update.ic" NAME="EquipoRepositoryImplTest.update Coverage Results" MODIFIED="1741523082367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/untitled$EquipoRepositoryImplTest_deleteLogical.ic" NAME="EquipoRepositoryImplTest.deleteLogical Coverage Results" MODIFIED="1741524476845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/untitled$EquipoRepositoryImplTest_getById.ic" NAME="EquipoRepositoryImplTest.getById Coverage Results" MODIFIED="1741464606835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/untitled$EquipoRepositoryImplTest.ic" NAME="EquipoRepositoryImplTest Coverage Results" MODIFIED="1741530867892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
