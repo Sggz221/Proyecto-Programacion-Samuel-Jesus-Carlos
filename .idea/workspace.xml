@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12809af-f7ba-4388-b6e5-c0746d98e451" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/view/MenuTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/personalOutput.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/personalOutput.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/personalOutput.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/personalOutput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/personalOutput.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/personalOutput.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/consults/Consultas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/querys/Consultas.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="untitled" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="untitled" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="untitled" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -82,13 +90,14 @@
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.Build Proyecto-Programacion-Samuel-Jesus-Carlos.executor": "Run",
+    "Gradle.Proyecto-Programacion-Samuel-Jesus-Carlos [dokkaHtml].executor": "Run",
     "Gradle.ServiceImplTest.delete.executor": "Run",
     "Gradle.ServiceImplTest.executor": "Coverage",
     "Gradle.ServiceImplTest.getByIdCache.executor": "Coverage",
     "Gradle.ServiceImplTest.importFromFileCSV.executor": "Coverage",
     "Gradle.ServiceImplTest.update.executor": "Coverage",
     "Gradle.ServiceImplTest.updateNull.executor": "Run",
-    "Gradle.Tests in 'untitled.test'.executor": "Coverage",
+    "Gradle.Tests in 'untitled.test'.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -115,6 +124,11 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sggz2\Desktop\Proyecto-Programacion-Samuel-Jesus-Carlos\documentation" />
+      <recent name="C:\Users\sggz2\Desktop\Proyecto-Programacion-Samuel-Jesus-Carlos\jar" />
+      <recent name="C:\Users\sggz2\Desktop\Proyecto-Programacion-Samuel-Jesus-Carlos\build\libs" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="view" />
       <recent name="service" />
@@ -122,6 +136,28 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Proyecto-Programacion-Samuel-Jesus-Carlos [dokkaHtml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dokkaHtml" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'untitled.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -146,6 +182,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Proyecto-Programacion-Samuel-Jesus-Carlos [dokkaHtml]" />
         <item itemvalue="Gradle.Tests in 'untitled.test'" />
       </list>
     </recent_temporary>
@@ -167,6 +204,9 @@
       <option name="presentableId" value="Default" />
       <updated>1741555752874</updated>
       <workItem from="1741555756219" duration="533000" />
+      <workItem from="1741557045862" duration="2313000" />
+      <workItem from="1741590445413" duration="157000" />
+      <workItem from="1741590608596" duration="1627000" />
     </task>
     <servers />
   </component>
@@ -174,6 +214,21 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
