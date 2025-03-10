@@ -1,8 +1,8 @@
 plugins {
 
-    kotlin("plugin.serialization") version "2.1.0"
-    kotlin("jvm") version "2.1.10"
+    kotlin("jvm") version "1.9.20"
     application
+    // documentation
     id("org.jetbrains.dokka") version "1.9.20"
 }
 
@@ -14,12 +14,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
+    testImplementation(kotlin("test"))
     implementation("org.lighthousegames:logging:1.5.0")
     implementation("ch.qos.logback:logback-classic:1.5.12")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
-    implementation("io.github.pdvrieze.xmlutil:serialization-jvm:0.90.3")
 }
 
 tasks.test {
@@ -27,7 +24,7 @@ tasks.test {
 }
 tasks.jar {
     manifest {
-        attributes["Main-Class"] = "org.example.MainKt"
+        attributes["Main-Class"] = "MainKt"
     }
     configurations["compileClasspath"].forEach { file: File ->
         from(zipTree(file.absoluteFile))
