@@ -86,40 +86,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build Proyecto-Programacion-Samuel-Jesus-Carlos.executor": "Run",
-    "Gradle.Proyecto-Programacion-Samuel-Jesus-Carlos [dokkaHtml].executor": "Run",
-    "Gradle.ServiceImplTest.delete.executor": "Run",
-    "Gradle.ServiceImplTest.executor": "Coverage",
-    "Gradle.ServiceImplTest.getByIdCache.executor": "Coverage",
-    "Gradle.ServiceImplTest.importFromFileCSV.executor": "Coverage",
-    "Gradle.ServiceImplTest.update.executor": "Coverage",
-    "Gradle.ServiceImplTest.updateNull.executor": "Run",
-    "Gradle.Tests in 'untitled.test'.executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "features",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/carlo/IdeaProjects/TestsValidadorDNI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build Proyecto-Programacion-Samuel-Jesus-Carlos.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Proyecto-Programacion-Samuel-Jesus-Carlos [dokkaHtml].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ServiceImplTest.delete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ServiceImplTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.ServiceImplTest.getByIdCache.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.ServiceImplTest.importFromFileCSV.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.ServiceImplTest.update.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.ServiceImplTest.updateNull.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'untitled.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;features&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/IdeaProjects/TestsValidadorDNI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -135,7 +135,7 @@
       <recent name="repositories" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Proyecto-Programacion-Samuel-Jesus-Carlos [dokkaHtml]">
     <configuration name="Proyecto-Programacion-Samuel-Jesus-Carlos [dokkaHtml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
