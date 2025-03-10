@@ -152,7 +152,7 @@ class Consultas(private val service:ServiceImpl = ServiceImpl()) {
 
         println("--------------------------------------")
 
-       println("25. Promedio de goles por posición, y dentro de cada posición, el jugador con el mayor número de goles")
+        println("25. Promedio de goles por posición, y dentro de cada posición, el jugador con el mayor número de goles")
         service.getAll().filterIsInstance<Jugador>().groupBy { it.posicion }.mapValues { (_,jugadores) ->
             val maxGoles = jugadores.maxBy { it.goles }
             val goles = jugadores.map { it.goles }

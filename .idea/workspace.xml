@@ -5,14 +5,438 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7c4c1b4-3309-43e1-a7f4-9b65d94c99a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__co_touchlab_stately_common_jvm_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__co_touchlab_stately_concurrency_jvm_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_pdvrieze_xmlutil_core_jdk_0_90_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_pdvrieze_xmlutil_core_jvmcommon_0_90_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_pdvrieze_xmlutil_serialization_jvm_0_90_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_2_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_serialization_core_jvm_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_serialization_json_jvm_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lighthousegames_logging_jvm_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_2_0_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Proyecto-Programacion-Samuel-Jesus-Carlos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Proyecto-Programacion-Samuel-Jesus-Carlos.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Proyecto-Programacion-Samuel-Jesus-Carlos.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/Proyecto-Programacion-Samuel-Jesus-Carlos.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/Cache/Cache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/Cache/CacheImpl$cacheLRU$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/Cache/CacheImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/MainKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/configuration/Configuration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/configuration/ConfigurationProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/consults/Consultas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/EquipoDTO$$serializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/EquipoDTO$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/EquipoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteDTO$$serializer$annotationImpl$nl_adaptivity_xmlutil_serialization_XmlElement$0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteDTO$$serializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteDTO$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteXmlDTO$$serializer$annotationImpl$nl_adaptivity_xmlutil_serialization_XmlElement$0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteXmlDTO$$serializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteXmlDTO$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/dto/IntegranteXmlDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/exceptions/Exceptions$InvalidoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/exceptions/Exceptions$NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/exceptions/Exceptions$StorageException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/exceptions/Exceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/extensions/ExtensionsKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/mapper/IntegranteMapperKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/models/Entrenador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/models/Especialidad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/models/Integrante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/models/Jugador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/models/Posicion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/repositories/CrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/repositories/EquipoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/repositories/EquipoRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/service/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/service/ServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/service/ServiceImplKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/storage/EquipoStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/storage/EquipoStorageBIN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/storage/EquipoStorageCSV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/storage/EquipoStorageJSON.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/storage/EquipoStorageXML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/validator/IntegranteValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/org/example/view/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/META-INF/Proyecto-Programacion-Samuel-Jesus-Carlos_test.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/cache/CacheImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/configuration/ConfigurationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/extensions/ExtensionsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/mapper/IntegranteMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/repositories/EquipoRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/service/ServiceImplTest$deleteLogicalNull$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/service/ServiceImplTest$deleteNull$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/service/ServiceImplTest$getByIdNotFound$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/service/ServiceImplTest$getByIdRepositoryNotFound$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/service/ServiceImplTest$updateNull$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/service/ServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageBINTest$fileReadThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageBINTest$fileWriteThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageBINTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageCSVTest$fileReadThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageCSVTest$fileWriteThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageCSVTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageJSONTest$fileReadThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageJSONTest$fileWriteThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageJSONTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageXMLTest$fileReadThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageXMLTest$fileWriteThrowsFileNotExistsException$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/storage/EquipoStorageXMLTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateEntrenadorOk$$inlined$assertDoesNotThrow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateEntrenadorOk$$inlined$assertDoesNotThrow$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateJugadorOk$$inlined$assertDoesNotThrow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateJugadorOk$$inlined$assertDoesNotThrow$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithAltura$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithAltura2$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithApellidos$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithDorsal$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithDorsal2$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithFechaIncorporacion$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithFechaIncorporacion2$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithFechaNacimiento$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithGoles$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithNombre$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithPais$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithPartidosJugados$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithPeso$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest$validateThrowsExceptionWithSalario$$inlined$assertThrows$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/validator/IntegranteValidatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/view/MenuTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/anchor-copy-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/arrow_down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/burger.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/copy-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/copy-successful-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/footer-go-to-link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/go-to-top-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/homepage.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/logo-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/abstract-class-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/abstract-class.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/annotation-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/annotation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/class-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/class.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/enum-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/enum.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/exception-class.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/field-value.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/field-variable.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/function.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/interface-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/interface.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/object.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/nav-icons/typealias-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/images/theme-toggle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/clipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/navigation-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/pages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/platform-content-handler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/prism.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/sourceset_dependencies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/scripts/symbol-parameters-wrapper_deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/styles/font-jb-sans-auto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/styles/logo-styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/styles/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/-cache-impl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/clear.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/entries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/get.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/keys.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/put.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/remove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache-impl/values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/clear.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/entries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/get.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/keys.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/put.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/remove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/-cache/values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.Cache/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.configuration/-configuration-properties/-configuration-properties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.configuration/-configuration-properties/backup-directory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.configuration/-configuration-properties/data-directory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.configuration/-configuration-properties/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.configuration/-configuration/configuration-properties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.configuration/-configuration/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.configuration/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.consults/-consultas/-consultas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.consults/-consultas/consultas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.consults/-consultas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.consults/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-equipo-d-t-o/-equipo-d-t-o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-equipo-d-t-o/equipo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-equipo-d-t-o/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/-integrante-d-t-o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/altura.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/apellidos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/dorsal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/especialidad.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/fecha_incorporacion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/fecha_nacimiento.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/goles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/nombre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/pais.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/partidos_jugados.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/peso.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/posicion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/rol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-d-t-o/salario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/-integrante-xml-d-t-o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/altura.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/apellidos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/dorsal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/especialidad.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/fecha_incorporacion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/fecha_nacimiento.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/goles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/nombre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/pais.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/partidos_jugados.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/peso.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/posicion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/rol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/-integrante-xml-d-t-o/salario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.dto/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/-exceptions/-invalido-exception/-invalido-exception.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/-exceptions/-invalido-exception/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/-exceptions/-not-found-exception/-not-found-exception.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/-exceptions/-not-found-exception/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/-exceptions/-storage-exception/-storage-exception.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/-exceptions/-storage-exception/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/-exceptions/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.exceptions/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.extensions/copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.extensions/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.mapper/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.mapper/to-dto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.mapper/to-model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.mapper/to-xml-d-t-o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-entrenador/-entrenador.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-entrenador/especialidad.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-entrenador/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-entrenador/to-string.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-especialidad/-e-n-t-r-e-n-a-d-o-r_-a-s-i-s-t-e-n-t-e/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-especialidad/-e-n-t-r-e-n-a-d-o-r_-p-o-r-t-e-r-o-s/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-especialidad/-e-n-t-r-e-n-a-d-o-r_-p-r-i-n-c-i-p-a-l/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-especialidad/entries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-especialidad/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-especialidad/value-of.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-especialidad/values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/-integrante.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/apellidos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/created-at.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/fecha_incorporacion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/fecha_nacimiento.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/is-deleted.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/nombre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/pais.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/salario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-integrante/updated-at.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/-jugador.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/altura.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/dorsal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/goles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/partidos_jugados.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/peso.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/posicion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-jugador/to-string.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/-c-e-n-t-r-o-c-a-m-p-i-s-t-a/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/-d-e-f-e-n-s-a/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/-d-e-l-a-n-t-e-r-o/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/-p-o-r-t-e-r-o/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/entries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/value-of.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/-posicion/values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.models/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-crud-repository/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-crud-repository/get-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-crud-repository/get-by-id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-crud-repository/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-crud-repository/save.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-crud-repository/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/-equipo-repository-impl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/delete-logical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/get-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/get-by-id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/save.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository-impl/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository/delete-logical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/-equipo-repository/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.repositories/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/-service-impl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/delete-logical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/export-to-file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/get-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/get-by-id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/import-from-file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/save.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service-impl/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/delete-logical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/export-to-file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/get-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/get-by-id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/import-from-file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/save.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/-service/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.service/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-b-i-n/-equipo-storage-b-i-n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-b-i-n/file-read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-b-i-n/file-write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-b-i-n/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-c-s-v/-equipo-storage-c-s-v.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-c-s-v/file-read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-c-s-v/file-write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-c-s-v/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-j-s-o-n/-equipo-storage-j-s-o-n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-j-s-o-n/file-read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-j-s-o-n/file-write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-j-s-o-n/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-x-m-l/-equipo-storage-x-m-l.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-x-m-l/file-read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-x-m-l/file-write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage-x-m-l/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage/file-read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage/file-write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/-equipo-storage/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.storage/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.validator/-integrante-validator/-integrante-validator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.validator/-integrante-validator/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.validator/-integrante-validator/validar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.validator/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/actualizar-miembro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/borrar-miembro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/call-operation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/cargar-datos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/crear-miembro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-campos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-doble.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-entero.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-especialidad.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-fechas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-formato.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-i-d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-nombre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-posicion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-rol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/-menu/preguntar-string.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example.view/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/org.example/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dokka/html/untitled/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jar/Oliver.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dto/EquipoDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dto/EquipoDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/exceptions/Exceptions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/exceptions/Exceptions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/extensions/extensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/extensions/extensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Entrenador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Entrenador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Integrante.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Integrante.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Jugador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Jugador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/querys/Consultas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/querys/Consultas.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repositories/CrudRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/CrudRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/EquipoRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageCSV.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/storage/EquipoStorageCSV.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/validator/IntegranteValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/validator/IntegranteValidator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Proyecto-Programacion-Samuel-Jesus-Carlos" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Proyecto-Programacion-Samuel-Jesus-Carlos" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Proyecto-Programacion-Samuel-Jesus-Carlos" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -20,9 +444,51 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging main"
+    "Gradle.Build Proyecto-Programacion-Samuel-Jesus-Carlos.executor": "Run",
+    "Gradle.Proyecto-Programacion-Samuel-Jesus-Carlos [jar].executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/sggz2/Desktop/Proyecto-Programacion-Samuel-Jesus-Carlos/jar",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sggz2\Desktop\Proyecto-Programacion-Samuel-Jesus-Carlos\jar" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sggz2\Desktop\Proyecto-Programacion-Samuel-Jesus-Carlos\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Proyecto-Programacion-Samuel-Jesus-Carlos [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Proyecto-Programacion-Samuel-Jesus-Carlos [jar]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <servers />
   </component>

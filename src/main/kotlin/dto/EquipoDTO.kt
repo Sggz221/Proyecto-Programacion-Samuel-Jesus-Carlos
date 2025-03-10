@@ -11,4 +11,4 @@ import kotlinx.serialization.Serializable
 @SerialName("equipo")
 data class EquipoDTO(
      val equipo: List<IntegranteXmlDTO>
-     ): java.io.Serializable
+): java.io.Serializable
